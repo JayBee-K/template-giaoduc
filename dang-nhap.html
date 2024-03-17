@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <title>Template Giáo dục HQ MATHS</title>
+    <meta name="description" content="Template Giáo dục HQ MATHS">
+    <meta name="author" content="">
+
+    <meta property="og:title" content="Template Giáo dục HQ MATHS">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:description" content="Template Giáo dục HQ MATHS">
+    <meta property="og:image" content="./assets/images/logo.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+
+    <link rel="icon" href="./assets/images/favicon.png">
+    <link rel="apple-touch-icon" href="./assets/images/favicon.png">
+    <link rel="stylesheet" href="./assets/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/plugins/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./assets/plugins/fancybox/fancybox.min.css">
+    <link rel="stylesheet" href="./assets/plugins/waves/waves.min.css">
+    <link rel="stylesheet" href="./assets/plugins/daterangepicker/daterangepicker.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+
+    <style>
+        :root {
+            --primary-color: #126086;
+            --primary-hover: #0a75ab;
+            --primary-rgb: 18, 96, 134;
+            --secondary-color: #EE9727;
+            --secondary-hover: #cc7e1a;
+            --secondary-rgb: 238, 151, 39;
+        }
+    </style>
+</head>
+<body>
+
+<div class="page-user background-cover" style="background-image: url('./assets/images/bg-login.png')">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-xl-4 col-lg-5 col-md-6 col-sm-8">
+                <div class="form-user_logo text-center mb-4">
+                    <a href="" class="d-inline-block align-middle">
+                        <img src="./assets/images/logo-horizontal-white.png" height="80px" class="mw-100" alt="">
+                    </a>
+                </div>
+                <form id="formTemp" class="form-theme form-user needs-validation" novalidate>
+                    <div class="section-heading text-center mb-3">
+                        <div class="heading-title">
+                            ĐĂNG NHẬP
+                        </div>
+                    </div>
+                    <div class="row g-3">
+                        <div class="col-12">
+                            <div class="form-item">
+                                <input type="email" class="form-control form-item_input" required
+                                       placeholder="Email (*)">
+                                <div class="invalid-feedback">
+                                    Vui lòng nhập email
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-item form-item_group">
+                                <button type="button" class="form-item_icon btnViewPass" data-id="password">
+                                    <i class="far fa-eye"></i>
+                                </button>
+                                <input type="password" id="password"
+                                       class="form-control form-item_input" required
+                                       placeholder="Mật khẩu">
+                                <div class="invalid-feedback">
+                                    Vui lòng nhập mật khẩu
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 text-center">
+                            <button type="submit"
+                                    class="button-theme button-theme_primary button-theme_large w-100 waves-effect waves-light">
+                                ĐĂNG NHẬP
+                            </button>
+                        </div>
+                        <div class="col-12 text-center">
+                            <div class="form-desc">
+                                Hoặc đăng nhập với
+                            </div>
+                            <div class="hstack gap-5px justify-content-center mt-2">
+                                <button type="button" class="link-default form-item_social form-item_google">
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                                        <g>
+                                            <path fill="#EA4335"
+                                                  d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"></path>
+                                            <path fill="#4285F4"
+                                                  d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"></path>
+                                            <path fill="#FBBC05"
+                                                  d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"></path>
+                                            <path fill="#34A853"
+                                                  d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"></path>
+                                            <path fill="none" d="M0 0h48v48H0z"></path>
+                                        </g>
+                                    </svg>
+                                </button>
+                                <button type="button" class="link-default form-item_social form-item_facebook">
+                                    <i class="fab fa-facebook"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-12 text-center">
+                            <div class="form-desc hstack gap-10px justify-content-between">
+                                <a href="">Đăng ký tài khoản</a>
+                                <a href="">
+                                    Quên mật khẩu
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <div class="mt-3">
+                    <div class="section-heading text-center mb-0">
+                        <div class="text-white">
+                            Một sản phẩm của Unica. Hotline: 0904 886 098
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="./assets/plugins/jquery.min.js"></script>
+<script type="text/javascript" src="./assets/plugins/daterangepicker/moment.min.js"></script>
+<script type="text/javascript" src="./assets/plugins/daterangepicker/daterangepicker.js"></script>
+<script type="text/javascript" src="./assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="./assets/plugins/swiper/swiper-bundle.min.js"></script>
+<script type="text/javascript" src="./assets/plugins/fancybox/fancybox.min.js"></script>
+<script type="text/javascript" src="./assets/plugins/waves/waves.min.js"></script>
+<script type="text/javascript" src="./assets/js/app.js"></script>
+</body>
+</html>

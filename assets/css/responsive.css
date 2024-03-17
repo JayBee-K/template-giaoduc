@@ -14,8 +14,20 @@
 
     .header-bottom .header-navigation > ul > li > a,
     .header-bottom .header-navigation > ul > li > button {
-        padding: 15px 8px 11px;
+        padding: 10px 8px;
         font-size: 0.925em;
+    }
+
+    .header .header-category .link-default {
+        width: 220px;
+    }
+
+    .header-top .header-logo img {
+        height: 60px;
+    }
+
+    .header-top .header-search {
+        min-width: 300px;
     }
 }
 
@@ -94,7 +106,6 @@
         background-color: var(--primary-color);
     }
 
-
     .header .header-category .category-list {
         position: absolute;
         -webkit-box-shadow: 0 6px 14px -6px rgba(24, 39, 75, 0.12), 0 10px 32px -4px rgba(24, 39, 75, 0.1);
@@ -134,11 +145,16 @@
         margin-right: 8px !important;
         color: var(--bs-white);
     }
+
+    .header.is-scroll {
+        transform: translateY(-81px);
+    }
 }
 
 @media screen and (max-width: 991px) {
     .header-top {
-        padding: 5px 0 0;
+        padding: 5px 0 55px;
+        position: relative;
     }
 
     .header-top .header-inner {
@@ -156,11 +172,17 @@
     }
 
     .header-top .header-middle {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
         order: 3;
-        margin: 0 calc(-1 * var(--bs-gutter-x));
-        padding: 6px calc(0.5 * var(--bs-gutter-x)) 6px var(--bs-gutter-x);
         background-color: var(--primary-color);
-        width: calc(100% + calc(1.5 * var(--bs-gutter-x)));
+        padding: 6px;
+        /*margin: 0 calc(-1 * var(--bs-gutter-x));
+        padding: 6px calc(0.5 * var(--bs-gutter-x)) 6px var(--bs-gutter-x);
+
+        width: calc(100% + calc(1.5 * var(--bs-gutter-x)));*/
         display: flex;
         align-items: center;
         gap: calc(0.25 * var(--bs-gutter-x));
@@ -642,6 +664,87 @@
     .teacher-slide .teacher-content .teacher-desc {
         font-size: 1em;
     }
+
+    .category-sort {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        max-width: 100%;
+    }
+
+    .category-sidebar {
+        position: fixed;
+        top: 0;
+        width: 90%;
+        max-width: 320px;
+        background-color: var(--bs-white);
+        height: 100vh;
+        overflow-y: auto;
+        z-index: 13;
+        -webkit-transition: var(--transition-default);
+        -o-transition: var(--transition-default);
+        transition: var(--transition-default);
+        padding: 15px;
+        left: -150%;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    }
+
+    .category-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+        z-index: 12;
+        visibility: hidden;
+        pointer-events: none;
+        opacity: 0;
+        background: rgba(0, 0, 0, .7);
+        -webkit-transition: opacity .3s ease-in-out, visibility .3s ease-in-out;
+        -o-transition: opacity .3s ease-in-out, visibility .3s ease-in-out;
+        transition: opacity .3s ease-in-out, visibility .3s ease-in-out;
+    }
+
+    .is-sidebar {
+        overflow: hidden;
+    }
+
+    .is-sidebar .category-sidebar,
+    .is-sidebar .category-overlay {
+        left: 0;
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+    }
+
+    .combo-item {
+        padding: 50px 25px 25px;
+    }
+
+    .combo-item .combo-class {
+        height: 50px;
+        width: calc(100% - 80px);
+    }
+
+    .combo-item .combo-class .combo-class_number {
+        height: 50px;
+        width: 50px;
+        font-size: 1.45em;
+    }
+
+    .combo-item .combo-class .combo-class_name {
+        font-size: 1.3em;
+        padding: 0 50px;
+    }
+
+    .combo-item .combo-content .combo-content_title {
+        font-size: 1.6em;
+    }
+
+    .combo-item .combo-content .combo-content_title > span {
+        font-size: 1.8em;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -671,6 +774,16 @@
         padding-left: 0;
         margin-left: 0;
         border-left: 0;
+    }
+
+    .contact-info .contact-info_item img {
+        display: none;
+    }
+    .contact-info {
+        align-items: center;
+    }
+    .contact-info .contact-info_item {
+        text-align: center;
     }
 }
 

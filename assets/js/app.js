@@ -339,6 +339,28 @@ const handleCart = function () {
     }
 }
 
+
+const handleCategorySidebar = function () {
+    const categorySidebar = $('#categorySidebar');
+
+    if (categorySidebar.length && windowWidth <= 991) {
+        /***
+         * Xử lý đóng mở category sidebar
+         */
+        const btnCall = $('#callSidebar');
+        const categoryOverlay = $('#categoryOverlay');
+        const body = $('body');
+
+        btnCall.click(function () {
+            body.addClass('is-sidebar');
+        });
+
+        categoryOverlay.click(function () {
+            body.removeClass('is-sidebar');
+        });
+    }
+}
+
 const handleInitDateRangePicker = function (elmInput) {
     let format = 'DD-MM-YYYY';
     const initDateRangePicker = elmInput.daterangepicker({
@@ -396,7 +418,19 @@ const handleFrm = () => {
         return false;
     });
 }
-
+const handleViewPass = function () {
+    if ($('.btnViewPass').length) {
+        $(document).on('click', '.btnViewPass', function (e) {
+            if ($('#' + $(this).attr('data-id')).attr('type') == 'text') {
+                $('#' + $(this).attr('data-id')).attr('type', 'password');
+                $(this).html('<i class="far fa-eye"></i>');
+            } else {
+                $('#' + $(this).attr('data-id')).attr('type', 'text');
+                $(this).html('<i class="far fa-eye-slash"></i>');
+            }
+        });
+    }
+}
 
 $(function () {
     handleApplyCollapse($('#header-navigation > ul'), true, true);
@@ -409,9 +443,11 @@ $(function () {
     handleCopyValue();
     handleInitFancybox();
     handleCart();
+    handleCategorySidebar();
     handleContentDetail();
     handleCategoryBar();
     handleFrm();
+    handleViewPass()
 
     if ($('.waves-effect').length) {
         Waves.init();
