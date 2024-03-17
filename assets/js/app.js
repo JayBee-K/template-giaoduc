@@ -339,6 +339,64 @@ const handleCart = function () {
     }
 }
 
+const handleInitDateRangePicker = function (elmInput) {
+    let format = 'DD-MM-YYYY';
+    const initDateRangePicker = elmInput.daterangepicker({
+        singleDatePicker: true,
+        alwaysShowCalendars: true,
+        timePicker: false,
+        timePicker24Hour: false,
+        timePickerSeconds: false,
+        parentEl: 'body',
+        autoApply: true,
+        locale: {
+            format: format,
+            daysOfWeek: [
+                "CN",
+                "T2",
+                "T3",
+                "T4",
+                "T5",
+                "T6",
+                "T7"
+            ],
+            monthNames: [
+                "Tháng 1",
+                "Tháng 2",
+                "Tháng 3",
+                "Tháng 4",
+                "Tháng 5",
+                "Tháng 6",
+                "Tháng 7",
+                "Tháng 8",
+                "Tháng 9",
+                "Tháng 10",
+                "Tháng 11",
+                "Tháng 12"
+            ],
+            applyLabel: 'Áp dụng',
+            cancelLabel: 'Đóng',
+        }
+    });
+
+    if (typeof type != "undefined" && type === 'time') {
+        initDateRangePicker.on('show.daterangepicker', function (ev, picker) {
+            picker.container.find(".drp-calendar").addClass('px-3');
+            picker.container.find(".calendar-table").hide();
+        });
+    }
+}
+
+const handleFrm = () => {
+    $('#formTemp').submit(function () {
+        let form = $(this);
+        if (!form[0].checkValidity()) {
+            form.addClass('was-validated');
+        }
+        return false;
+    });
+}
+
 
 $(function () {
     handleApplyCollapse($('#header-navigation > ul'), true, true);
@@ -351,13 +409,22 @@ $(function () {
     handleCopyValue();
     handleInitFancybox();
     handleCart();
-
     handleContentDetail();
-
     handleCategoryBar();
+    handleFrm();
 
     if ($('.waves-effect').length) {
         Waves.init();
+    }
+
+    if ($('.initDateRangePicker input').length) {
+        $('.initDateRangePicker input').each(function () {
+            let elmInput = $(this);
+
+            elmInput.on('focus', function () {
+                handleInitDateRangePicker(elmInput)
+            })
+        });
     }
 
     if ($('#slider-hero').length) {
@@ -480,6 +547,34 @@ $(function () {
                 breakpoints: {
                     1359: {
                         slidesPerView: 4,
+                    },
+                    768: {
+                        slidesPerView: 2.3,
+                    },
+                    320: {
+                        slidesPerView: 1.3,
+                    }
+                },
+                pagination: {
+                    el: '#' + elmID + ' .slider-pagination',
+                    type: 'bullets',
+                    bulletClass: 'slider-pagination_item',
+                    clickable: true,
+                }
+            });
+        })
+    }
+
+    if ($('.slider-teacher').length) {
+        $('.slider-teacher').each(function () {
+            let elmID = $(this).attr('id');
+
+            new Swiper('#' + elmID + ' .swiper', {
+                speed: 1000,
+                spaceBetween: 15,
+                breakpoints: {
+                    1359: {
+                        slidesPerView: 3,
                     },
                     768: {
                         slidesPerView: 2.3,

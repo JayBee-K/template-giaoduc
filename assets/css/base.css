@@ -2,6 +2,8 @@
     --transition-default: 0.3s all ease-in-out;
     --font-theme: 'Inter', Arial, Helvetica, sans-serif;
     --size-theme: 14px;
+    --bg-theme: #f1f5f8;
+    --color-desc: #5f5f5f;
 }
 
 body {
@@ -365,5 +367,16 @@ input[type='number'] {
 
 .button-theme.button-theme_secondary:hover {
     background: var(--secondary-hover);
+    color: var(--bs-white);
+}
+
+.button-theme.button-theme_outline {
+    border: 1px solid var(--bs-white);
+    background: transparent;
+    color: var(--bs-white);
+}
+
+.button-theme.button-theme_outline:hover {
+    background: #ffffff40;
     color: var(--bs-white);
 }
