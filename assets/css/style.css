@@ -1887,11 +1887,135 @@
     color: var(--bs-black);
 }
 
-.contact-info .contact-info_item p > a{
+.contact-info .contact-info_item p > a {
     color: inherit;
     font-weight: 700;
 }
 
-.contact-info  .contact-info_item p > a:hover {
+.contact-info .contact-info_item p > a:hover {
     color: var(--primary-color);
+}
+
+.section-payment .payment-tab {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.section-payment .payment-tab .button-tab {
+    height: 44px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    border-radius: 99px;
+    border: 1px solid var(--primary-color);
+    width: 30%;
+    padding: 2px;
+    font-size: 1em;
+    color: var(--bs-black);
+    position: relative;
+    font-weight: 700;
+    transition: var(--transition-default);
+}
+
+.section-payment .payment-tab .button-tab span {
+    border-radius: 50px;
+    background-color: var(--primary-color);
+    color: var(--bs-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    position: absolute;
+    top: 50%;
+    left: 2px;
+    font-size: 1.15em;
+    transform: translateY(-50%);
+    transition: var(--transition-default);
+}
+
+.section-payment .payment-tab .button-tab:hover,
+.section-payment .payment-tab .button-tab.active {
+    background-color: var(--primary-color);
+    color: var(--bs-white);
+}
+
+.section-payment .payment-tab .button-tab:hover span,
+.section-payment .payment-tab .button-tab.active span {
+    background-color: var(--bs-white);
+    color: var(--primary-color);
+}
+
+.section-payment .payment-desc {
+    line-height: 1.5;
+}
+
+.section-payment .payment-desc p {
+    margin-bottom: 12px;
+}
+
+.payment-banks {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.payment-banks .payment-bank {
+    display: flex;
+    border: 1px solid #e0e0e0;
+    background-color: var(--bg-theme);
+    border-radius: 5px;
+}
+
+.payment-banks .payment-bank .payment-bank_logo {
+    flex: 0 0 160px;
+    max-width: 160px;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 5px;
+}
+
+.payment-banks .payment-bank .payment-bank_logo .payment-bank_qr {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.payment-banks .payment-bank .payment-bank_content {
+    border-left: 1px solid #e0e0e0;
+    width: 100%;
+    padding: 15px;
+}
+
+.payment-banks .payment-bank .payment-bank_content .payment-desc p {
+    margin-bottom: 9px;
+}
+
+.payment-banks .payment-bank .payment-bank_content .payment-desc p:last-child {
+    margin-bottom: 0;
+}
+
+.payment-banks + .payment-desc {
+    margin-top: 12px;
+}
+
+.alert-theme p:last-child {
+    margin-bottom: 0;
+}
+
+.alert-theme {
+    margin-bottom: 12px;
+}
+
+.alert-theme p {
+    margin-bottom: 12px;
 }

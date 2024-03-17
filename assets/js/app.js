@@ -432,6 +432,17 @@ const handleViewPass = function () {
     }
 }
 
+const handleChangeQr = function () {
+    if ($('.buttonChangeQr').length) {
+        $('.buttonChangeQr').click(function () {
+            let imageQR = './assets/images/bank/qrcode-large.png';
+
+            $(this).prev('img').attr('src', imageQR);
+            $(this).remove();
+        })
+    }
+}
+
 $(function () {
     handleApplyCollapse($('#header-navigation > ul'), true, true);
     handleCallMenu();
@@ -448,6 +459,7 @@ $(function () {
     handleCategoryBar();
     handleFrm();
     handleViewPass()
+    handleChangeQr();
 
     if ($('.waves-effect').length) {
         Waves.init();
