@@ -45,6 +45,40 @@
 </head>
 <body>
 
+<div class="modal fade popup-verification" id="popupVerification" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="verification-title">
+                    Nhập mã xác nhận đã được gửi đến số điện thoại <b>xxxxxxxxxx</b> để xác minh tài khoản
+                </div>
+                <form action="" class="form-theme">
+                    <div class="form-item vstack gap-10px">
+                        <div class="d-flex gap-10px">
+                            <input type="text" class="form-control form-item_input"
+                                   required=""
+                                   placeholder="Nhập mã xác minh">
+                        </div>
+                    </div>
+                    <div class="mt-3 form-item hstack justify-content-center gap-15px">
+                        <button type="submit"
+                                class="button-theme button-theme_primary waves-effect waves-light">
+                            Xác minh
+                        </button>
+                        <button type="button" data-bs-dismiss="modal"
+                                class="button-theme button-theme_dark waves-effect waves-light">
+                            Dùng số điện thoại khác
+                        </button>
+                    </div>
+                </form>
+                <div class="verification-desc text-center mt-2">
+                    Nếu chưa nhận được mã xác minh, bấm <a href="javascript:void(0)" class="text-decoration-underline">Gửi lại</a> (sau 02:40) để nhập lại
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <div id="header" class="header">
     <div class="header-top">
         <div class="container">
@@ -412,461 +446,43 @@
 
 <div id="main" class="main">
     <div class="section-page">
-        <div class="section-breadcrumb">
-            <div class="container">
-                <ol class="breadcrumb bg-transparent rounded-0 mb-0 p-0">
-                    <li class="breadcrumb-item">
-                        <a href="#">Trang chủ</a>
-                    </li>
-                    <li class="breadcrumb-item">
-                        Thanh toán kho học
-                    </li>
-                </ol>
-            </div>
-        </div>
-        <div class="section-gap">
+        <div class="section-verification">
             <div class="container">
                 <div class="row g-3">
-                    <div class="col-lg-9">
-                        <div class="section-payment">
-                            <div class="payment-tab nav">
-                                <button type="button" class="link-default button-tab active" data-bs-toggle="tab"
-                                        data-bs-target="#chuyenkhoan">
-                                    <span>
-                                        <i class="fas fa-wallet"></i>
-                                    </span>
-                                    Chuyển khoản ngân hàng
-                                </button>
-                                <button type="button" class="link-default button-tab" data-bs-toggle="tab"
-                                        data-bs-target="#gateways">
-                                    <span>
-                                        <i class="fas fa-money-check"></i>
-                                    </span>
-                                    Dùng VNPAY, Momo
-                                </button>
-                            </div>
-                            <div class="tab-content">
-                                <div class="tab-pane fade show active" id="chuyenkhoan">
-                                    <div class="pt-4">
-                                        <div class="payment-desc">
-                                            <p>
-                                                <span class="fw-bold text-danger">Bước 1:</span>
-                                                KH chuyển tiền tới một trong các ngân hàng dưới đây (chuyển khoản bằng
-                                                nhiều
-                                                cách như chuyển tiền tại quầy ngân hàng, chuyển qua app ngân hàng,
-                                                chuyển
-                                                tiền qua thẻ ATM, chuyển qua MOMO, VNPAY, NAPAS…)
-                                            </p>
-                                            <p>
-                                                Chú ý: KH ghi đúng nội dung nộp tiền theo công thức: tên đăng nhập &lt;dấu
-                                                cách&gt; số điện thoại VD: nguyenloan 0906022258
-                                            </p>
-                                            <p>
-                                                <span class="fw-bold text-danger">Bước 2:</span>
-                                                Tuyensinh247.com sẽ nạp tiền vào tài khoản học trên trang theo đúng nội
-                                                dung
-                                                nộp tiền KH đã ghi và gửi thông báo về SĐT đăng ký tài khoản học trên
-                                                trang.
-                                            </p>
-                                            <p>
-                                                <span class="fw-bold text-danger">Bước 3:</span>
-                                                KH truy cập lại tài khoản học trên trang và đặt mua các khóa học
-                                            </p>
-                                            <p class="text-center fw-bold">
-                                                Danh sách các ngân hàng khách hàng có thể chuyển khoản vào
-                                            </p>
-                                        </div>
-                                        <div class="payment-banks">
-                                            <div class="payment-bank">
-                                                <div class="payment-bank_logo">
-                                                    <img src="./assets/images/bank/agr_bank.png" class="mw-100" alt="">
-                                                    <button type="button"
-                                                            class="link-default payment-bank_qr buttonChangeQr">
-                                                        <img src="./assets/images/bank/qr-code.jpg" class="img-fluid"
-                                                             alt="">
-                                                    </button>
-                                                </div>
-                                                <div class="payment-bank_content">
-                                                    <div class="payment-desc">
-                                                        <p>
-                                                            <b>Số TK:</b> 0451000305322
-                                                        </p>
-                                                        <p>
-                                                            <b>Tên TK:</b> CÔNG TY CỔ PHẦN CÔNG NGHỆ GIÁO DỤC THÀNH PHÁT
-                                                        </p>
-                                                        <p>
-                                                            <b>Ngân Hàng:</b> Agribank chi nhánh Tây Hà Nội
-                                                        </p>
-                                                        <p>
-                                                            <b>Nội dung nộp:</b> <b>tantrieu912</b> &lt;dấu
-                                                            cách&gt;
-                                                            <b>0333851195 </b>. Ví dụ: tài khoản đăng nhập vào
-                                                            trang
-                                                            tuyensinh247.com
-                                                            của bạn là:
-                                                            tantrieu912
-                                                            thì bạn ghi:
-                                                            <b>tantrieu912</b>
-                                                            &lt;dấu
-                                                            cách&gt; 0333851195
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="payment-bank">
-                                                <div class="payment-bank_logo">
-                                                    <img src="./assets/images/bank/bidv_bank.png" class="mw-100" alt="">
-                                                    <button type="button"
-                                                            class="link-default payment-bank_qr buttonChangeQr">
-                                                        <img src="./assets/images/bank/qr-code.jpg" class="img-fluid"
-                                                             alt="">
-                                                    </button>
-                                                </div>
-                                                <div class="payment-bank_content">
-                                                    <div class="payment-desc">
-                                                        <p>
-                                                            <b>Số TK:</b> 0451000305322
-                                                        </p>
-                                                        <p>
-                                                            <b>Tên TK:</b> CÔNG TY CỔ PHẦN CÔNG NGHỆ GIÁO DỤC THÀNH PHÁT
-                                                        </p>
-                                                        <p>
-                                                            <b>Ngân Hàng:</b> Agribank chi nhánh Tây Hà Nội
-                                                        </p>
-                                                        <p>
-                                                            <b>Nội dung nộp:</b> <b>tantrieu912</b> &lt;dấu
-                                                            cách&gt;
-                                                            <b>0333851195 </b>. Ví dụ: tài khoản đăng nhập vào
-                                                            trang
-                                                            tuyensinh247.com
-                                                            của bạn là:
-                                                            tantrieu912
-                                                            thì bạn ghi:
-                                                            <b>tantrieu912</b>
-                                                            &lt;dấu
-                                                            cách&gt; 0333851195
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="payment-bank">
-                                                <div class="payment-bank_logo">
-                                                    <img src="./assets/images/bank/tech_bank.png" class="mw-100" alt="">
-                                                    <button type="button"
-                                                            class="link-default payment-bank_qr buttonChangeQr">
-                                                        <img src="./assets/images/bank/qr-code.jpg" class="img-fluid"
-                                                             alt="">
-                                                    </button>
-                                                </div>
-                                                <div class="payment-bank_content">
-                                                    <div class="payment-desc">
-                                                        <p>
-                                                            <b>Số TK:</b> 0451000305322
-                                                        </p>
-                                                        <p>
-                                                            <b>Tên TK:</b> CÔNG TY CỔ PHẦN CÔNG NGHỆ GIÁO DỤC THÀNH PHÁT
-                                                        </p>
-                                                        <p>
-                                                            <b>Ngân Hàng:</b> Agribank chi nhánh Tây Hà Nội
-                                                        </p>
-                                                        <p>
-                                                            <b>Nội dung nộp:</b> <b>tantrieu912</b> &lt;dấu
-                                                            cách&gt;
-                                                            <b>0333851195 </b>. Ví dụ: tài khoản đăng nhập vào
-                                                            trang
-                                                            tuyensinh247.com
-                                                            của bạn là:
-                                                            tantrieu912
-                                                            thì bạn ghi:
-                                                            <b>tantrieu912</b>
-                                                            &lt;dấu
-                                                            cách&gt; 0333851195
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="payment-bank">
-                                                <div class="payment-bank_logo">
-                                                    <img src="./assets/images/bank/viettin_bank.png" class="mw-100"
-                                                         alt="">
-                                                    <button type="button"
-                                                            class="link-default payment-bank_qr buttonChangeQr">
-                                                        <img src="./assets/images/bank/qr-code.jpg" class="img-fluid"
-                                                             alt="">
-                                                    </button>
-                                                </div>
-                                                <div class="payment-bank_content">
-                                                    <div class="payment-desc">
-                                                        <p>
-                                                            <b>Số TK:</b> 0451000305322
-                                                        </p>
-                                                        <p>
-                                                            <b>Tên TK:</b> CÔNG TY CỔ PHẦN CÔNG NGHỆ GIÁO DỤC THÀNH PHÁT
-                                                        </p>
-                                                        <p>
-                                                            <b>Ngân Hàng:</b> Agribank chi nhánh Tây Hà Nội
-                                                        </p>
-                                                        <p>
-                                                            <b>Nội dung nộp:</b> <b>tantrieu912</b> &lt;dấu
-                                                            cách&gt;
-                                                            <b>0333851195 </b>. Ví dụ: tài khoản đăng nhập vào
-                                                            trang
-                                                            tuyensinh247.com
-                                                            của bạn là:
-                                                            tantrieu912
-                                                            thì bạn ghi:
-                                                            <b>tantrieu912</b>
-                                                            &lt;dấu
-                                                            cách&gt; 0333851195
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="payment-desc">
-                                            <p>
-                                                <span class="fw-bold text-danger">Khách hàng lưu ý:</span>
-                                            </p>
-                                            <div class="alert alert-warning alert-theme">
-                                                <p>
-                                                    - Nếu chuyển tiền tại quầy ngân hàng hãy giữ lại biên lai giao dịch
-                                                    cho
-                                                    tới khi số tiền đã được nạp vào tài khoản học trên Tuyensinh247.com
-                                                    để
-                                                    đảm bảo giao dịch được an toàn tuyệt đối.
-                                                </p>
-                                                <p>
-                                                    - Nếu chuyển tiền qua cây ATM, sau khi chuyển khoản xong KH vui lòng
-                                                    liên hệ lại Hotline miễn phí 18006947 cung cấp tên đăng nhập để
-                                                    Tuyensinh247.com chuyển tiền vào tài khoản học trên trang luôn.
-                                                </p>
-                                            </div>
-                                            <p>
-                                                <b>Điện thoại hỗ trợ:</b> Hotline miễn phí <a href="">1800.6947</a> hoặc
-                                                số
-                                                máy bàn
-                                                <a href="">024.7300.7989</a> (7h đến 22h các ngày)
-                                            </p>
-                                            <p>
-                                                <b>Email liên hệ: </b><a href="">lienhe@tuyensinh247.com</a>
-                                            </p>
-                                            <p>
-                                                Chúc quý khách hàng thành công và luôn đồng hành cùng Tuyensinh247.com!
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="tab-pane fade" id="gateways">
-                                    <div class="pt-4">
-                                        <div class="gateways-tab nav">
-                                            <button type="button" class="link-default button-tab active"
-                                                    data-bs-toggle="tab"
-                                                    data-bs-target="#vnpay">
-                                                VNPAY
-                                            </button>
-                                            <button type="button" class="link-default button-tab" data-bs-toggle="tab"
-                                                    data-bs-target="#momo">
-                                                MOMO
-                                            </button>
-                                        </div>
-                                        <div class="gateways-inner">
-                                            <div class="tab-content">
-                                                <div class="tab-pane fade show active" id="vnpay">
-                                                    <div class="gateways-content">
-                                                        <div class="gateways-image">
-                                                            <img src="./assets/images/bank/vnpay.png" class="img-fluid"
-                                                                 alt="">
-                                                        </div>
-                                                        <div class="payment-desc">
-                                                            <p>
-                                                                <span class="text-danger fw-bold">Lưu ý:</span>
-                                                            </p>
-                                                            <ul>
-                                                                <li> - Thanh toán với VNPAY: Bạn cần có app mobile
-                                                                    banking
-                                                                    hỗ trợ chức năng thanh toán bằng QRPay (<a
-                                                                            href=""
-                                                                            target="_blank">Danh sách các ngân hàng hỗ
-                                                                        trợ
-                                                                        tại đây</a>).
-                                                                </li>
-                                                                <li> - Sau khi hoàn thành thanh toán: Số tiền nạp sẽ tự
-                                                                    động
-                                                                    có trong tài khoản học trên trang của bạn.
-                                                                </li>
-                                                                <li> - Bạn cần vào phần "Giỏ hàng của tôi" để mua các
-                                                                    khóa.
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                    <div class="payment-form mt-3">
-                                                        <form action="" class="form-theme">
-                                                            <div class="form-item d-md-flex align-items-center gap-10px">
-                                                                <label for=""
-                                                                       class="fw-bold text-black text-nowrap mb-1 mb-md-0">
-                                                                    Tiền cần thanh toán khi nạp VNPAY:<span
-                                                                        class="text-danger fw-bold">(*)</span>
-                                                                </label>
-                                                                <input type="text" class="form-control form-item_input"
-                                                                       required=""
-                                                                       placeholder="Bạn cần nạp tối thiếu thiểu 10,000 VNĐ">
-                                                            </div>
-                                                            <div class="mt-3 form-item text-center">
-                                                                <button type="submit"
-                                                                        class="button-theme button-theme_primary waves-effect waves-light">
-                                                                    Nạp tiền
-                                                                </button>
-                                                            </div>
-                                                        </form>
-                                                    </div>
-                                                </div>
-                                                <div class="tab-pane fade" id="momo">
-                                                    <div class="gateways-content">
-                                                        <div class="gateways-image">
-                                                            <img src="./assets/images/bank/momo.png" class="img-fluid"
-                                                                 alt="">
-                                                        </div>
-                                                        <div class="payment-desc">
-                                                            <p>
-                                                                <span class="text-danger fw-bold">Lưu ý:</span>
-                                                            </p>
-                                                            <ul>
-                                                                <li> - Thanh toán với VNPAY: Bạn cần có app mobile
-                                                                    banking
-                                                                    hỗ trợ chức năng thanh toán bằng QRPay (<a
-                                                                            href=""
-                                                                            target="_blank">Danh sách các ngân hàng hỗ
-                                                                        trợ
-                                                                        tại đây</a>).
-                                                                </li>
-                                                                <li> - Sau khi hoàn thành thanh toán: Số tiền nạp sẽ tự
-                                                                    động
-                                                                    có trong tài khoản học trên trang của bạn.
-                                                                </li>
-                                                                <li> - Bạn cần vào phần "Giỏ hàng của tôi" để mua các
-                                                                    khóa.
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                    <div class="payment-form mt-3">
-                                                        <form action="" class="form-theme">
-                                                            <div class="form-item d-md-flex align-items-center gap-10px">
-                                                                <label for=""
-                                                                       class="fw-bold text-black text-nowrap mb-1 mb-md-0">
-                                                                    Tiền cần thanh toán khi nạp VNPAY:<span
-                                                                        class="text-danger fw-bold">(*)</span>
-                                                                </label>
-                                                                <input type="text" class="form-control form-item_input"
-                                                                       required=""
-                                                                       placeholder="Bạn cần nạp tối thiếu thiểu 10,000 VNĐ">
-                                                            </div>
-                                                            <div class="mt-3 form-item text-center">
-                                                                <button type="submit"
-                                                                        class="button-theme button-theme_primary waves-effect waves-light">
-                                                                    Nạp tiền
-                                                                </button>
-                                                            </div>
-                                                        </form>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                    <div class="col-lg-6">
+                        <div class="section-heading mb-3">
+                            <div class="heading-title fw-bold">
+                                Xác minh số điện thoại
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="section-sidebar">
-                            <div class="sidebar-item">
-                                <div class="sidebar-item_heading">
-                                    HỖ TRỢ - HƯỚNG DẪN
-                                </div>
-                                <div class="sidebar-item_body">
-                                    <div class="sidebar-item_contact">
-                                        <div class="sidebar-item_contact__top">
-                                            <div class="contact-icon">
-                                                <img src="./assets/images/call.png" height="50px" class="img-fluid"
-                                                     alt="">
-                                            </div>
-                                            <div class="contact-content">
-                                                <div class="contact-content_item">
-                                                    <div class="contact-content_item__title">
-                                                        Tel:
-                                                    </div>
-                                                    <div class="contact-content_item__value">
-                                                        <a href="">
-                                                            024.7300.7989
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <div class="contact-content_item">
-                                                    <div class="contact-content_item__title">
-                                                        Hotline:
-                                                    </div>
-                                                    <div class="contact-content_item__value">
-                                                        <a href="">
-                                                            1800.6947
-                                                            <img src="./assets/images/free.gif" class="img-fluid"
-                                                                 alt="">
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="sidebar-item_contact__bottom">
-                                            <p>(Thời gian hỗ trợ từ 7h đến 22h)</p>
-                                            <p><strong>Email:</strong> <a href="">lienhe@tuyensinh247.com</a></p>
-                                        </div>
-                                    </div>
-                                    <div class="sidebar-item_buttons">
-                                        <div class="vstack gap-10px">
-                                            <a href=""
-                                               class="button-theme button-theme_primary waves-effect waves-light">
-                                                Đăng nhập
-                                            </a>
-                                            <a href=""
-                                               class="button-theme button-theme_primary waves-effect waves-light">
-                                                Đăng ký tài khoản
-                                            </a>
-                                            <a href=""
-                                               class="button-theme button-theme_secondary waves-effect waves-light">
-                                                Mạp tiền vào tài khoản
-                                            </a>
-                                        </div>
-                                    </div>
+                        <form action="" class="form-theme">
+                            <div class="form-item vstack gap-10px">
+                                <label for=""
+                                       class="fw-bold text-black text-nowrap mb-1 mb-md-0">
+                                    Số điện thoại<span
+                                        class="text-danger fw-bold">(*)</span>
+                                </label>
+                                <div class="d-flex gap-10px">
+                                    <input type="text" class="form-control form-item_input"
+                                           required=""
+                                           placeholder="Nhập số điện thoại của bạn">
+                                    <button type="button" data-bs-toggle="modal" data-bs-target="#popupVerification"
+                                            class="button-theme button-theme_dark waves-effect waves-light">
+                                        Xác minh SĐT
+                                    </button>
                                 </div>
                             </div>
-                            <div class="sidebar-item">
-                                <div class="sidebar-item_heading">
-                                    CÁC BƯỚC ĐĂNG KÍ HỌC
-                                </div>
-                                <div class="sidebar-item_body">
-                                    <div class="sidebar-item_list">
-                                        <div class="sidebar-list_item active">
-                                            <a href="">
-                                                <img src="./assets/images/icon-step1.png" class="img-fluid" alt="">
-                                                Bước 1: Đăng ký - Đăng nhập
-                                            </a>
-                                        </div>
-                                        <div class="sidebar-list_item" >
-                                            <a href="">
-                                                <img src="./assets/images/icon-step2.png" class="img-fluid" alt="">
-                                                Bước 2: Nạp tiền để mua
-                                            </a>
-                                        </div>
-                                        <div class="sidebar-list_item">
-                                            <a href="">
-                                                <img src="./assets/images/icon-step3.png" class="img-fluid" alt="">
-                                                Bước 3: Đặt mua và vào học
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class="form-desc mt-1 fst-italic">
+                                Hãy nhập chính xác <span class="text-danger fw-bold">số điện thoại của bạn hoặc người
+                                thân</span> để được thầy cô và Tuyensinh247 hỗ trợ nhanh chóng!
                             </div>
-                        </div>
+                            <div class="mt-3 form-item">
+                                <button type="submit"
+                                        class="button-theme button-theme_primary waves-effect waves-light">
+                                    Hoàn thành
+                                </button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -977,11 +593,9 @@
                 <div class="col-lg-8">
                     <div class="footer-text">
                         <p>Giấy phép cung cấp dịch vụ mạng xã hội trực tuyến số 337/GP-BTTTT do Bộ Thông tin và Truyền
-                            thông cấp ngày 10/07/2017.
-                        </p>
+                            thông cấp ngày 10/07/2017.</p>
                         <p>Giấy phép kinh doanh giáo dục: MST-0106478082 do Sở Kế hoạch và Đầu tư cấp ngày
-                            24/10/2011.
-                        </p>
+                            24/10/2011.</p>
                         <p>Chịu trách nhiệm nội dung: Phạm Đức Tuệ.</p>
                     </div>
                 </div>

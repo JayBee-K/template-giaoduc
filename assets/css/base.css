@@ -381,6 +381,16 @@ input[type='number'] {
     color: var(--bs-white);
 }
 
+.button-theme.button-theme_dark {
+    background: var(--bs-secondary);
+    color: var(--bs-white);
+}
+
+.button-theme.button-theme_dark:hover {
+    background: #53595d;
+    color: var(--bs-white);
+}
+
 .row-combo {
     --bs-gutter-y: 45px;
 }
