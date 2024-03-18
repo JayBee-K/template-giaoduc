@@ -758,6 +758,15 @@
 		padding: 0 45px;
 		white-space: nowrap;
 	}
+
+	.section-sidebar .sidebar-item .sidebar-item_heading {
+		font-size: 1.075em;
+	}
+
+	.section-sidebar .sidebar-item .sidebar-item_contact__top .contact-content .contact-content_item {
+		font-size: 1.075em;
+	}
+
 }
 
 @media screen and (max-width: 768px) {
