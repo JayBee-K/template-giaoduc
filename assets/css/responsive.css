@@ -153,6 +153,10 @@
     .popup-verification .modal-dialog {
         min-width: 600px;
     }
+
+	.popup-study  .modal-dialog {
+		min-width: 768px;
+	}
 }
 
 @media screen and (max-width: 991px) {
