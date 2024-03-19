@@ -1,1417 +1,1425 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
-    <title>Template Giáo dục HQ MATHS</title>
-    <meta name="description" content="Template Giáo dục HQ MATHS">
-    <meta name="author" content="">
+	<title>Template Giáo dục HQ MATHS</title>
+	<meta name="description" content="Template Giáo dục HQ MATHS">
+	<meta name="author" content="">
 
-    <meta property="og:title" content="Template Giáo dục HQ MATHS">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="">
-    <meta property="og:description" content="Template Giáo dục HQ MATHS">
-    <meta property="og:image" content="./assets/images/logo.png">
+	<meta property="og:title" content="Template Giáo dục HQ MATHS">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="">
+	<meta property="og:description" content="Template Giáo dục HQ MATHS">
+	<meta property="og:image" content="./assets/images/logo.png">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 
 
-    <link rel="icon" href="./assets/images/favicon.png">
-    <link rel="apple-touch-icon" href="./assets/images/favicon.png">
-    <link rel="stylesheet" href="./assets/plugins/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./assets/plugins/swiper/swiper-bundle.min.css">
-    <link rel="stylesheet" href="./assets/plugins/fancybox/fancybox.min.css">
-    <link rel="stylesheet" href="./assets/plugins/waves/waves.min.css">
-    <link rel="stylesheet" href="./assets/plugins/daterangepicker/daterangepicker.css">
-    <link rel="stylesheet" href="./assets/fonts/fontawesome/css/all.min.css">
-    <link rel="stylesheet" href="./assets/css/base.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/responsive.css">
+	<link rel="icon" href="./assets/images/favicon.png">
+	<link rel="apple-touch-icon" href="./assets/images/favicon.png">
+	<link rel="stylesheet" href="./assets/plugins/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./assets/plugins/swiper/swiper-bundle.min.css">
+	<link rel="stylesheet" href="./assets/plugins/fancybox/fancybox.min.css">
+	<link rel="stylesheet" href="./assets/plugins/waves/waves.min.css">
+	<link rel="stylesheet" href="./assets/plugins/daterangepicker/daterangepicker.css">
+	<link rel="stylesheet" href="./assets/fonts/fontawesome/css/all.min.css">
+	<link rel="stylesheet" href="./assets/css/base.css">
+	<link rel="stylesheet" href="./assets/css/style.css">
+	<link rel="stylesheet" href="./assets/css/responsive.css">
 
-    <style>
-        :root {
-            --primary-color: #126086;
-            --primary-hover: #0a75ab;
-            --primary-rgb: 18, 96, 134;
-            --secondary-color: #EE9727;
-            --secondary-hover: #cc7e1a;
-            --secondary-rgb: 238, 151, 39;
-        }
-    </style>
+	<style>
+		:root {
+			--primary-color: #126086;
+			--primary-hover: #0a75ab;
+			--primary-rgb: 18, 96, 134;
+			--secondary-color: #EE9727;
+			--secondary-hover: #cc7e1a;
+			--secondary-rgb: 238, 151, 39;
+		}
+	</style>
 </head>
 <body>
 
 <div id="header" class="header">
-    <div class="header-top">
-        <div class="container">
-            <div class="header-inner">
-                <div class="header-logo hstack">
-                    <a href="" class="d-inline-block align-middle">
-                        <img src="./assets/images/logo.webp"
-                             class="mw-100" alt="">
-                    </a>
-                </div>
-                <div class="header-middle">
-                    <div class="header-search">
-                        <form action="">
-                            <input type="text" class="form-control header-search_input"
-                                   placeholder="Tìm khóa học, giáo viên, ID lời giải câu hỏi bạn quan tâm">
-                            <button class="link-default header-search_btn">
-                                <i class="far fa-search"></i>
-                            </button>
-                        </form>
-                    </div>
-                    <div class="header-hamburger d-flex d-lg-none">
-                        <button type="button" class="hamburger-button" id="hamburger-button">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </button>
-                    </div>
-                </div>
-                <div class="header-toolbar">
-                    <div class="header-action">
-                        <div class="header-action_top">
-                            <div class="header-action_item header-action_desktop">
-                                <a href="">
-                                    <i class="fas fa-sign-in-alt"></i>
-                                    Tạo tài khoản
-                                </a>
-                            </div>
-                            <div class="header-action_item header-action_desktop">
-                                <a href="">
-                                    <i class="fas fa-user-alt"></i>
-                                    Đăng nhập
-                                </a>
-                            </div>
-                            <!--
-                            <div class="header-action_item header-action_desktop">
-                                <a href="">
-                                    <i class="fas fa-user-alt"></i>
-                                    Tài khoản
-                                    <span>
-                                        <i class="fal fa-angle-down"></i>
-                                    </span>
-                                </a>
-                                <ul class="header-user_list">
-                                    <li>
-                                        <a href="">
-                                            Thông tin tài khoản
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="">
-                                            Đổi mật khẩu
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="">
-                                            Đăng xuất
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            -->
-                            <div class="header-action_item header-action_mobile">
-                                <a href="">
-                                    <i class="fas fa-user-alt"></i>
-                                    <span class="d-none d-sm-inline-flex">
-                                        Tài khoản
-                                    </span>
-                                    <span class="d-none d-sm-inline-flex">
-                                        <i class="fal fa-angle-down"></i>
-                                    </span>
-                                </a>
-                                <ul class="header-user_list">
-                                    <li>
-                                        <a href="">
-                                            Tạo tài khoản
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="">
-                                            Đăng ký
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="header-action_item">
-                                <a href="">
-                                    <img src="./assets/images/language/vn.png" class="img-fluid" alt="">
-                                    Tiếng Việt
-                                    <span>
-                                        <i class="fal fa-angle-down"></i>
-                                    </span>
-                                </a>
-                                <ul class="header-language_list">
-                                    <li>
-                                        <a href="">
-                                            <img src="./assets/images/language/vn.png" class="img-fluid" alt="">
-                                            Tiếng Việt
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="">
-                                            <img src="./assets/images/language/en.png" class="img-fluid" alt="">
-                                            English
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="header-action_bottom">
-                            <div class="header-action_item">
-                                <a href="">
-                                    <i class="fas fa-phone-alt"></i>
-                                    Hotline: 1900 1089
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="header-cart">
-                        <button type="button" id="callCart" class="link-default header-cart_btn">
-                            <i class="far fa-shopping-cart"></i>
-                            <span>5</span>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="header-bottom">
-        <div class="container">
-            <div class="hstack gap-10px">
-                <div class="header-category d-lg-flex d-none" id="header-category">
-                    <button class="link-default" id="callCategory">
-                        <i class="fal fa-bars me-2"></i>Danh sách khóa học
-                    </button>
-                    <div class="category-list">
-                        <ul>
-                            <li>
-                                <a href="">
-                                    Ôn luyện ĐGTD, ĐGNL
-                                    <img src="./assets/images/icon-hot.png" class="img-fluid" alt="">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    Lớp 12 - 2K6
-                                    <img src="./assets/images/icon-new.gif" class="img-fluid" alt="">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    Lớp 12 - 2K6 - LIVE PRO
-                                    <img src="./assets/images/icon-plus.png" class="img-fluid" alt="">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    Lớp 11 - 2K7
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    Ôn luyện ĐGTD, ĐGNL
-                                    <img src="./assets/images/icon-hot.png" class="img-fluid" alt="">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    Lớp 12 - 2K6
-                                    <img src="./assets/images/icon-new.gif" class="img-fluid" alt="">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    Lớp 12 - 2K6 - LIVE PRO
-                                    <img src="./assets/images/icon-plus.png" class="img-fluid" alt="">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    Lớp 11 - 2K7
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    Ôn luyện ĐGTD, ĐGNL
-                                    <img src="./assets/images/icon-hot.png" class="img-fluid" alt="">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    Lớp 12 - 2K6
-                                    <img src="./assets/images/icon-new.gif" class="img-fluid" alt="">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    Lớp 12 - 2K6 - LIVE PRO
-                                    <img src="./assets/images/icon-plus.png" class="img-fluid" alt="">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    Lớp 11 - 2K7
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="header-navigation" id="header-navigation">
-                    <ul>
-                        <li class="navigation-logo d-flex d-lg-none">
-                            <a href="" class="d-inline-flex align-middle" data-href="">
-                                <img src="./assets/images/logo-horizontal-white.png" class="img-fluid">
-                            </a>
-                        </li>
-                        <li class="d-block d-lg-none">
-                            <a href="" data-href="">
-                                Danh sách khóa học
-                                <i class="fal fa-angle-down"></i>
-                            </a>
-                            <ul>
-                                <li>
-                                    <a href="">
-                                        Ôn luyện ĐGTD, ĐGNL
-                                        <img src="./assets/images/icon-hot.png" class="img-fluid" alt="">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="">
-                                        Lớp 12 - 2K6
-                                        <img src="./assets/images/icon-new.gif" class="img-fluid" alt="">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="">
-                                        Lớp 12 - 2K6 - LIVE PRO
-                                        <img src="./assets/images/icon-plus.png" class="img-fluid" alt="">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="">
-                                        Lớp 11 - 2K7
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="">
-                                        Ôn luyện ĐGTD, ĐGNL
-                                        <img src="./assets/images/icon-hot.png" class="img-fluid" alt="">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="">
-                                        Lớp 12 - 2K6
-                                        <img src="./assets/images/icon-new.gif" class="img-fluid" alt="">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="">
-                                        Lớp 12 - 2K6 - LIVE PRO
-                                        <img src="./assets/images/icon-plus.png" class="img-fluid" alt="">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="">
-                                        Lớp 11 - 2K7
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="">
-                                        Ôn luyện ĐGTD, ĐGNL
-                                        <img src="./assets/images/icon-hot.png" class="img-fluid" alt="">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="">
-                                        Lớp 12 - 2K6
-                                        <img src="./assets/images/icon-new.gif" class="img-fluid" alt="">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="">
-                                        Lớp 12 - 2K6 - LIVE PRO
-                                        <img src="./assets/images/icon-plus.png" class="img-fluid" alt="">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="">
-                                        Lớp 11 - 2K7
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="" data-href="">
-                                Combo
-                                <img src="./assets/images/icon-km.gif" class="img-fluid" alt="">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="" data-href="">Giới thiệu</a>
-                        </li>
-                        <li>
-                            <a href="" data-href="">Giáo viên</a>
-                        </li>
-                        <li>
-                            <a href="" data-href="">Học thử miễn phí <i class="fal fa-angle-down"></i></a>
-                            <ul>
-                                <li>
-                                    <a href="" data-href="">Học thử miễn phí 1</a>
-                                </li>
-                                <li>
-                                    <a href="" data-href="">Học thử miễn phí 2</a>
-                                </li>
-                                <li>
-                                    <a href="" data-href="">Học thử miễn phí 3</a>
-                                </li>
-                                <li>
-                                    <a href="" data-href="">Học thử miễn phí 4</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="" data-href="">Hướng dẫn <i class="fal fa-angle-down"></i></a>
-                            <ul>
-                                <li>
-                                    <a href="" data-href="">Hướng dẫn học thử</a>
-                                </li>
-                                <li>
-                                    <a href="" data-href="">Hướng dẫn đăng ký học</a>
-                                </li>
-                                <li>
-                                    <a href="" data-href="">Hướng dẫn nạp tiền</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="" data-href="">Blog</a>
-                        </li>
-                        <li>
-                            <a href="" data-href="">Nạp tiền</a>
-                        </li>
-                        <li>
-                            <a href="" data-href="">
-                                Liên hệ
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="header-overlay" id="header-overlay"></div>
+	<div class="header-top">
+		<div class="container">
+			<div class="header-inner">
+				<div class="header-logo hstack">
+					<a href="" class="d-inline-block align-middle">
+						<img src="./assets/images/logo.webp"
+						     class="mw-100" alt="">
+					</a>
+				</div>
+				<div class="header-middle">
+					<div class="header-search">
+						<form action="">
+							<input type="text" class="form-control header-search_input"
+							       placeholder="Tìm khóa học, giáo viên, ID lời giải câu hỏi bạn quan tâm">
+							<button class="link-default header-search_btn">
+								<i class="far fa-search"></i>
+							</button>
+						</form>
+					</div>
+					<div class="header-hamburger d-flex d-lg-none">
+						<button type="button" class="hamburger-button" id="hamburger-button">
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+						</button>
+					</div>
+				</div>
+				<div class="header-toolbar">
+					<div class="header-action">
+						<div class="header-action_top">
+							<div class="header-action_item header-action_desktop">
+								<a href="">
+									<i class="fas fa-sign-in-alt"></i>
+									Tạo tài khoản
+								</a>
+							</div>
+							<div class="header-action_item header-action_desktop">
+								<a href="">
+									<i class="fas fa-user-alt"></i>
+									Đăng nhập
+								</a>
+							</div>
+							<!--
+							<div class="header-action_item header-action_desktop">
+								<a href="">
+									<i class="fas fa-user-alt"></i>
+									Tài khoản
+									<span>
+										<i class="fal fa-angle-down"></i>
+									</span>
+								</a>
+								<ul class="header-user_list">
+									<li>
+										<a href="">
+											Thông tin tài khoản
+										</a>
+									</li>
+									<li>
+										<a href="">
+											Đổi mật khẩu
+										</a>
+									</li>
+									<li>
+										<a href="">
+											Đăng xuất
+										</a>
+									</li>
+								</ul>
+							</div>
+							-->
+							<div class="header-action_item header-action_mobile">
+								<a href="">
+									<i class="fas fa-user-alt"></i>
+									<span class="d-none d-sm-inline-flex">
+										Tài khoản
+									</span>
+									<span class="d-none d-sm-inline-flex">
+										<i class="fal fa-angle-down"></i>
+									</span>
+								</a>
+								<ul class="header-user_list">
+									<li>
+										<a href="">
+											Tạo tài khoản
+										</a>
+									</li>
+									<li>
+										<a href="">
+											Đăng ký
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="header-action_item">
+								<a href="">
+									<img src="./assets/images/language/vn.png" class="img-fluid" alt="">
+									Tiếng Việt
+									<span>
+										<i class="fal fa-angle-down"></i>
+									</span>
+								</a>
+								<ul class="header-language_list">
+									<li>
+										<a href="">
+											<img src="./assets/images/language/vn.png" class="img-fluid" alt="">
+											Tiếng Việt
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<img src="./assets/images/language/en.png" class="img-fluid" alt="">
+											English
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="header-action_bottom">
+							<div class="header-action_item">
+								<a href="">
+									<i class="fas fa-phone-alt"></i>
+									Hotline: 1900 1089
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="header-cart">
+						<button type="button" id="callCart" class="link-default header-cart_btn">
+							<i class="far fa-shopping-cart"></i>
+							<span>5</span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="header-bottom">
+		<div class="container">
+			<div class="hstack gap-10px">
+				<div class="header-category d-lg-flex d-none" id="header-category">
+					<button class="link-default" id="callCategory">
+						<i class="fal fa-bars me-2"></i>Danh sách khóa học
+					</button>
+					<div class="category-list">
+						<ul>
+							<li>
+								<a href="">
+									Ôn luyện ĐGTD, ĐGNL
+									<img src="./assets/images/icon-hot.png" class="img-fluid" alt="">
+								</a>
+							</li>
+							<li>
+								<a href="">
+									Lớp 12 - 2K6
+									<img src="./assets/images/icon-new.gif" class="img-fluid" alt="">
+								</a>
+							</li>
+							<li>
+								<a href="">
+									Lớp 12 - 2K6 - LIVE PRO
+									<img src="./assets/images/icon-plus.png" class="img-fluid" alt="">
+								</a>
+							</li>
+							<li>
+								<a href="">
+									Lớp 11 - 2K7
+								</a>
+							</li>
+							<li>
+								<a href="">
+									Ôn luyện ĐGTD, ĐGNL
+									<img src="./assets/images/icon-hot.png" class="img-fluid" alt="">
+								</a>
+							</li>
+							<li>
+								<a href="">
+									Lớp 12 - 2K6
+									<img src="./assets/images/icon-new.gif" class="img-fluid" alt="">
+								</a>
+							</li>
+							<li>
+								<a href="">
+									Lớp 12 - 2K6 - LIVE PRO
+									<img src="./assets/images/icon-plus.png" class="img-fluid" alt="">
+								</a>
+							</li>
+							<li>
+								<a href="">
+									Lớp 11 - 2K7
+								</a>
+							</li>
+							<li>
+								<a href="">
+									Ôn luyện ĐGTD, ĐGNL
+									<img src="./assets/images/icon-hot.png" class="img-fluid" alt="">
+								</a>
+							</li>
+							<li>
+								<a href="">
+									Lớp 12 - 2K6
+									<img src="./assets/images/icon-new.gif" class="img-fluid" alt="">
+								</a>
+							</li>
+							<li>
+								<a href="">
+									Lớp 12 - 2K6 - LIVE PRO
+									<img src="./assets/images/icon-plus.png" class="img-fluid" alt="">
+								</a>
+							</li>
+							<li>
+								<a href="">
+									Lớp 11 - 2K7
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="header-navigation" id="header-navigation">
+					<ul>
+						<li class="navigation-logo d-flex d-lg-none">
+							<a href="" class="d-inline-flex align-middle" data-href="">
+								<img src="./assets/images/logo-horizontal-white.png" class="img-fluid">
+							</a>
+						</li>
+						<li class="d-block d-lg-none">
+							<a href="" data-href="">
+								Danh sách khóa học
+								<i class="fal fa-angle-down"></i>
+							</a>
+							<ul>
+								<li>
+									<a href="">
+										Ôn luyện ĐGTD, ĐGNL
+										<img src="./assets/images/icon-hot.png" class="img-fluid" alt="">
+									</a>
+								</li>
+								<li>
+									<a href="">
+										Lớp 12 - 2K6
+										<img src="./assets/images/icon-new.gif" class="img-fluid" alt="">
+									</a>
+								</li>
+								<li>
+									<a href="">
+										Lớp 12 - 2K6 - LIVE PRO
+										<img src="./assets/images/icon-plus.png" class="img-fluid" alt="">
+									</a>
+								</li>
+								<li>
+									<a href="">
+										Lớp 11 - 2K7
+									</a>
+								</li>
+								<li>
+									<a href="">
+										Ôn luyện ĐGTD, ĐGNL
+										<img src="./assets/images/icon-hot.png" class="img-fluid" alt="">
+									</a>
+								</li>
+								<li>
+									<a href="">
+										Lớp 12 - 2K6
+										<img src="./assets/images/icon-new.gif" class="img-fluid" alt="">
+									</a>
+								</li>
+								<li>
+									<a href="">
+										Lớp 12 - 2K6 - LIVE PRO
+										<img src="./assets/images/icon-plus.png" class="img-fluid" alt="">
+									</a>
+								</li>
+								<li>
+									<a href="">
+										Lớp 11 - 2K7
+									</a>
+								</li>
+								<li>
+									<a href="">
+										Ôn luyện ĐGTD, ĐGNL
+										<img src="./assets/images/icon-hot.png" class="img-fluid" alt="">
+									</a>
+								</li>
+								<li>
+									<a href="">
+										Lớp 12 - 2K6
+										<img src="./assets/images/icon-new.gif" class="img-fluid" alt="">
+									</a>
+								</li>
+								<li>
+									<a href="">
+										Lớp 12 - 2K6 - LIVE PRO
+										<img src="./assets/images/icon-plus.png" class="img-fluid" alt="">
+									</a>
+								</li>
+								<li>
+									<a href="">
+										Lớp 11 - 2K7
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="" data-href="">
+								Combo
+								<img src="./assets/images/icon-km.gif" class="img-fluid" alt="">
+							</a>
+						</li>
+						<li>
+							<a href="" data-href="">Giới thiệu</a>
+						</li>
+						<li>
+							<a href="" data-href="">Giáo viên</a>
+						</li>
+						<li>
+							<a href="" data-href="">Học thử miễn phí <i class="fal fa-angle-down"></i></a>
+							<ul>
+								<li>
+									<a href="" data-href="">Học thử miễn phí 1</a>
+								</li>
+								<li>
+									<a href="" data-href="">Học thử miễn phí 2</a>
+								</li>
+								<li>
+									<a href="" data-href="">Học thử miễn phí 3</a>
+								</li>
+								<li>
+									<a href="" data-href="">Học thử miễn phí 4</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="" data-href="">Hướng dẫn <i class="fal fa-angle-down"></i></a>
+							<ul>
+								<li>
+									<a href="" data-href="">Hướng dẫn học thử</a>
+								</li>
+								<li>
+									<a href="" data-href="">Hướng dẫn đăng ký học</a>
+								</li>
+								<li>
+									<a href="" data-href="">Hướng dẫn nạp tiền</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="" data-href="">Blog</a>
+						</li>
+						<li>
+							<a href="" data-href="">Nạp tiền</a>
+						</li>
+						<li>
+							<a href="" data-href="">
+								Liên hệ
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="header-overlay" id="header-overlay"></div>
 </div>
 
 <div id="main" class="main">
-    <div class="section-page">
-        <div class="section-breadcrumb">
-            <div class="container">
-                <ol class="breadcrumb bg-transparent rounded-0 mb-0 p-0">
-                    <li class="breadcrumb-item">
-                        <a href="#">Trang chủ</a>
-                    </li>
-                    <li class="breadcrumb-item">
-                        Danh sách khóa học
-                    </li>
-                </ol>
-            </div>
-        </div>
-        <div class="section-gap">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-3">
-                        <div id="categorySidebar" class="category-sidebar">
-                            <div class="category-sidebar_search">
-                                <form action="">
-                                    <input type="text" class="form-control" placeholder="Tìm trong danh mục này">
-                                    <button class="link-default header-search_btn">
-                                        <i class="far fa-search"></i>
-                                    </button>
-                                </form>
-                            </div>
-                            <div class="category-sidebar_list">
-                                <div class="category-sidebar_title">
-                                    Danh mục con
-                                </div>
-                                <ul>
-                                    <li>
-                                        <a href="">
-                                            Ôn luyện ĐGTD, ĐGNL
-                                            <img src="./assets/images/icon-hot.png" class="img-fluid" alt="">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="">
-                                            Lớp 12 - 2K6
-                                            <img src="./assets/images/icon-new.gif" class="img-fluid" alt="">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="">
-                                            Lớp 12 - 2K6 - LIVE PRO
-                                            <img src="./assets/images/icon-plus.png" class="img-fluid" alt="">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="">
-                                            Lớp 11 - 2K7
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="">
-                                            Ôn luyện ĐGTD, ĐGNL
-                                            <img src="./assets/images/icon-hot.png" class="img-fluid" alt="">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="">
-                                            Lớp 12 - 2K6
-                                            <img src="./assets/images/icon-new.gif" class="img-fluid" alt="">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="">
-                                            Lớp 12 - 2K6 - LIVE PRO
-                                            <img src="./assets/images/icon-plus.png" class="img-fluid" alt="">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="">
-                                            Lớp 11 - 2K7
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="">
-                                            Ôn luyện ĐGTD, ĐGNL
-                                            <img src="./assets/images/icon-hot.png" class="img-fluid" alt="">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="">
-                                            Lớp 12 - 2K6
-                                            <img src="./assets/images/icon-new.gif" class="img-fluid" alt="">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="">
-                                            Lớp 12 - 2K6 - LIVE PRO
-                                            <img src="./assets/images/icon-plus.png" class="img-fluid" alt="">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="">
-                                            Lớp 11 - 2K7
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="category-sidebar_list">
-                                <div class="category-sidebar_title">
-                                    Giảng viên
-                                </div>
-                                <div class="category-sidebar_radios">
-                                    <div class="category-sidebar_ratio">
-                                        <label for="topica-navative" class="category-sidebar_ratio__item">
-                                            <input type="checkbox" name="category-sort" id="topica-navative" value="1">
-                                            <span>Topica Native</span>
-                                        </label>
-                                    </div>
-                                    <div class="category-sidebar_ratio">
-                                        <label for="dang-thanh-kiet" class="category-sidebar_ratio__item">
-                                            <input type="checkbox" name="category-sort" id="dang-thanh-kiet" value="2">
-                                            <span>Đặng Thanh Kiệt</span>
-                                        </label>
-                                    </div>
-                                    <div class="category-sidebar_ratio">
-                                        <label for="bui-duc-tien" class="category-sidebar_ratio__item">
-                                            <input type="checkbox" name="category-sort" id="bui-duc-tien" value="3">
-                                            <span>Bùi Đức Tiến</span>
-                                        </label>
-                                    </div>
-                                    <div class="category-sidebar_ratio">
-                                        <label for="mr-barry" class="category-sidebar_ratio__item">
-                                            <input type="checkbox" name="category-sort" id="mr-barry" value="4">
-                                            <span>Mr. Barry</span>
-                                        </label>
-                                    </div>
-                                    <div class="category-sidebar_ratio">
-                                        <label for="adam-yan" class="category-sidebar_ratio__item">
-                                            <input type="checkbox" name="category-sort" id="adam-yan" value="5">
-                                            <span>Adam Yan</span>
-                                        </label>
-                                    </div>
-                                    <div class="category-sidebar_ratio">
-                                        <label for="bianca-rayner" class="category-sidebar_ratio__item">
-                                            <input type="checkbox" name="category-sort" id="bianca-rayner" value="6">
-                                            <span>Bianca Rayner</span>
-                                        </label>
-                                    </div>
-                                    <div class="category-sidebar_ratio">
-                                        <label for="bui-thi-kim-dung" class="category-sidebar_ratio__item">
-                                            <input type="checkbox" name="category-sort" id="bui-thi-kim-dung" value="7">
-                                            <span>Bùi Thị Kim Dung</span>
-                                        </label>
-                                    </div>
-                                    <div class="category-sidebar_ratio">
-                                        <label for="chau-vinh-luan" class="category-sidebar_ratio__item">
-                                            <input type="checkbox" name="category-sort" id="chau-vinh-luan" value="8">
-                                            <span>Châu Vĩnh Luân</span>
-                                        </label>
-                                    </div>
-                                    <div class="category-sidebar_ratio">
-                                        <label for="pham-hong-long" class="category-sidebar_ratio__item">
-                                            <input type="checkbox" name="category-sort" id="pham-hong-long" value="9">
-                                            <span>Phạm Hồng Long</span>
-                                        </label>
-                                    </div>
-                                    <div class="category-sidebar_ratio">
-                                        <label for="pham-nguyen-tuan" class="category-sidebar_ratio__item">
-                                            <input type="checkbox" name="category-sort" id="pham-nguyen-tuan"
-                                                   value="10">
-                                            <span>Phạm Nguyên Tuấn</span>
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="categoryOverlay" class="category-overlay"></div>
-                    </div>
-                    <div class="col-lg-9">
-                        <div class="category-filter d-block d-lg-none">
-                            <button type="button" id="callSidebar" class="link-default">
-                                <i class="far fa-filter"></i>
-                                Bộ lọc
-                            </button>
-                        </div>
-                        <div class="category-sort">
-                            <button type="button" class="category-sort_item waves-effect waves-light active">
-                                Liên quan nhất
-                            </button>
-                            <button type="button" class="category-sort_item waves-effect">
-                                Phố biến nhất
-                            </button>
-                            <button type="button" class="category-sort_item waves-effect">
-                                Giá rẻ nhất
-                            </button>
-                            <button type="button" class="category-sort_item waves-effect">
-                                Mới nhất
-                            </button>
-                        </div>
-                        <div class="row g-3 row-cols-1 row-cols-sm-2 row-cols-xl-3">
-                            <div class="col">
-                                <div class="course-card card d-flex rounded-0 bg-white border-0 overflow-hidden h-100 d-flex waves-effect">
-                                    <div class="card-header p-0 border-0 overflow-hidden rounded-0">
-                                        <div class="ratio ratio-16x9">
-                                            <img src="./assets/images/course/course-2.webp"
-                                                 class="img-fluid transition-default" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="card-body vstack">
-                                        <div class="card-category">
-                                            Công nghệ thông tin
-                                        </div>
-                                        <div class="card-title limit transition-default">
-                                            Lập trình C# trong 5 tuần - nâng cao
-                                        </div>
-                                        <div class="mt-auto">
-                                            <div class="card-user mt-1">
-                                                Kim Mạnh Tuấn
-                                            </div>
-                                            <div class="card-price mt-1">
-                                                <div class="card-price_current">
-                                                    399,000 VNĐ
-                                                </div>
-                                                <div class="card-price_old">
-                                                    799,000 VNĐ
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <a href="" class="stretched-link"></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="course-card card d-flex rounded-0 bg-white border-0 overflow-hidden h-100 d-flex waves-effect">
-                                    <div class="card-header p-0 border-0 overflow-hidden rounded-0">
-                                        <div class="ratio ratio-16x9">
-                                            <img src="./assets/images/course/course-2.webp"
-                                                 class="img-fluid transition-default" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="card-body vstack">
-                                        <div class="card-category">
-                                            Công nghệ thông tin
-                                        </div>
-                                        <div class="card-title limit transition-default">
-                                            Lập trình C# trong 5 tuần - nâng cao
-                                        </div>
-                                        <div class="mt-auto">
-                                            <div class="card-user mt-1">
-                                                Kim Mạnh Tuấn
-                                            </div>
-                                            <div class="card-price mt-1">
-                                                <div class="card-price_current">
-                                                    399,000 VNĐ
-                                                </div>
-                                                <div class="card-price_old">
-                                                    799,000 VNĐ
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <a href="" class="stretched-link"></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="course-card card d-flex rounded-0 bg-white border-0 overflow-hidden h-100 d-flex waves-effect">
-                                    <div class="card-header p-0 border-0 overflow-hidden rounded-0">
-                                        <div class="ratio ratio-16x9">
-                                            <img src="./assets/images/course/course-2.webp"
-                                                 class="img-fluid transition-default" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="card-body vstack">
-                                        <div class="card-category">
-                                            Công nghệ thông tin
-                                        </div>
-                                        <div class="card-title limit transition-default">
-                                            Lập trình C# trong 5 tuần - nâng cao
-                                        </div>
-                                        <div class="mt-auto">
-                                            <div class="card-user mt-1">
-                                                Kim Mạnh Tuấn
-                                            </div>
-                                            <div class="card-price mt-1">
-                                                <div class="card-price_current">
-                                                    399,000 VNĐ
-                                                </div>
-                                                <div class="card-price_old">
-                                                    799,000 VNĐ
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <a href="" class="stretched-link"></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="course-card card d-flex rounded-0 bg-white border-0 overflow-hidden h-100 d-flex waves-effect">
-                                    <div class="card-header p-0 border-0 overflow-hidden rounded-0">
-                                        <div class="ratio ratio-16x9">
-                                            <img src="./assets/images/course/course-2.webp"
-                                                 class="img-fluid transition-default" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="card-body vstack">
-                                        <div class="card-category">
-                                            Công nghệ thông tin
-                                        </div>
-                                        <div class="card-title limit transition-default">
-                                            Lập trình C# trong 5 tuần - nâng cao
-                                        </div>
-                                        <div class="mt-auto">
-                                            <div class="card-user mt-1">
-                                                Kim Mạnh Tuấn
-                                            </div>
-                                            <div class="card-price mt-1">
-                                                <div class="card-price_current">
-                                                    399,000 VNĐ
-                                                </div>
-                                                <div class="card-price_old">
-                                                    799,000 VNĐ
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <a href="" class="stretched-link"></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="course-card card d-flex rounded-0 bg-white border-0 overflow-hidden h-100 d-flex waves-effect">
-                                    <div class="card-header p-0 border-0 overflow-hidden rounded-0">
-                                        <div class="ratio ratio-16x9">
-                                            <img src="./assets/images/course/course-2.webp"
-                                                 class="img-fluid transition-default" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="card-body vstack">
-                                        <div class="card-category">
-                                            Công nghệ thông tin
-                                        </div>
-                                        <div class="card-title limit transition-default">
-                                            Lập trình C# trong 5 tuần - nâng cao
-                                        </div>
-                                        <div class="mt-auto">
-                                            <div class="card-user mt-1">
-                                                Kim Mạnh Tuấn
-                                            </div>
-                                            <div class="card-price mt-1">
-                                                <div class="card-price_current">
-                                                    399,000 VNĐ
-                                                </div>
-                                                <div class="card-price_old">
-                                                    799,000 VNĐ
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <a href="" class="stretched-link"></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="course-card card d-flex rounded-0 bg-white border-0 overflow-hidden h-100 d-flex waves-effect">
-                                    <div class="card-header p-0 border-0 overflow-hidden rounded-0">
-                                        <div class="ratio ratio-16x9">
-                                            <img src="./assets/images/course/course-2.webp"
-                                                 class="img-fluid transition-default" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="card-body vstack">
-                                        <div class="card-category">
-                                            Công nghệ thông tin
-                                        </div>
-                                        <div class="card-title limit transition-default">
-                                            Lập trình C# trong 5 tuần - nâng cao
-                                        </div>
-                                        <div class="mt-auto">
-                                            <div class="card-user mt-1">
-                                                Kim Mạnh Tuấn
-                                            </div>
-                                            <div class="card-price mt-1">
-                                                <div class="card-price_current">
-                                                    399,000 VNĐ
-                                                </div>
-                                                <div class="card-price_old">
-                                                    799,000 VNĐ
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <a href="" class="stretched-link"></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="course-card card d-flex rounded-0 bg-white border-0 overflow-hidden h-100 d-flex waves-effect">
-                                    <div class="card-header p-0 border-0 overflow-hidden rounded-0">
-                                        <div class="ratio ratio-16x9">
-                                            <img src="./assets/images/course/course-2.webp"
-                                                 class="img-fluid transition-default" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="card-body vstack">
-                                        <div class="card-category">
-                                            Công nghệ thông tin
-                                        </div>
-                                        <div class="card-title limit transition-default">
-                                            Lập trình C# trong 5 tuần - nâng cao
-                                        </div>
-                                        <div class="mt-auto">
-                                            <div class="card-user mt-1">
-                                                Kim Mạnh Tuấn
-                                            </div>
-                                            <div class="card-price mt-1">
-                                                <div class="card-price_current">
-                                                    399,000 VNĐ
-                                                </div>
-                                                <div class="card-price_old">
-                                                    799,000 VNĐ
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <a href="" class="stretched-link"></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="course-card card d-flex rounded-0 bg-white border-0 overflow-hidden h-100 d-flex waves-effect">
-                                    <div class="card-header p-0 border-0 overflow-hidden rounded-0">
-                                        <div class="ratio ratio-16x9">
-                                            <img src="./assets/images/course/course-2.webp"
-                                                 class="img-fluid transition-default" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="card-body vstack">
-                                        <div class="card-category">
-                                            Công nghệ thông tin
-                                        </div>
-                                        <div class="card-title limit transition-default">
-                                            Lập trình C# trong 5 tuần - nâng cao
-                                        </div>
-                                        <div class="mt-auto">
-                                            <div class="card-user mt-1">
-                                                Kim Mạnh Tuấn
-                                            </div>
-                                            <div class="card-price mt-1">
-                                                <div class="card-price_current">
-                                                    399,000 VNĐ
-                                                </div>
-                                                <div class="card-price_old">
-                                                    799,000 VNĐ
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <a href="" class="stretched-link"></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="course-card card d-flex rounded-0 bg-white border-0 overflow-hidden h-100 d-flex waves-effect">
-                                    <div class="card-header p-0 border-0 overflow-hidden rounded-0">
-                                        <div class="ratio ratio-16x9">
-                                            <img src="./assets/images/course/course-2.webp"
-                                                 class="img-fluid transition-default" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="card-body vstack">
-                                        <div class="card-category">
-                                            Công nghệ thông tin
-                                        </div>
-                                        <div class="card-title limit transition-default">
-                                            Lập trình C# trong 5 tuần - nâng cao
-                                        </div>
-                                        <div class="mt-auto">
-                                            <div class="card-user mt-1">
-                                                Kim Mạnh Tuấn
-                                            </div>
-                                            <div class="card-price mt-1">
-                                                <div class="card-price_current">
-                                                    399,000 VNĐ
-                                                </div>
-                                                <div class="card-price_old">
-                                                    799,000 VNĐ
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <a href="" class="stretched-link"></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="course-card card d-flex rounded-0 bg-white border-0 overflow-hidden h-100 d-flex waves-effect">
-                                    <div class="card-header p-0 border-0 overflow-hidden rounded-0">
-                                        <div class="ratio ratio-16x9">
-                                            <img src="./assets/images/course/course-2.webp"
-                                                 class="img-fluid transition-default" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="card-body vstack">
-                                        <div class="card-category">
-                                            Công nghệ thông tin
-                                        </div>
-                                        <div class="card-title limit transition-default">
-                                            Lập trình C# trong 5 tuần - nâng cao
-                                        </div>
-                                        <div class="mt-auto">
-                                            <div class="card-user mt-1">
-                                                Kim Mạnh Tuấn
-                                            </div>
-                                            <div class="card-price mt-1">
-                                                <div class="card-price_current">
-                                                    399,000 VNĐ
-                                                </div>
-                                                <div class="card-price_old">
-                                                    799,000 VNĐ
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <a href="" class="stretched-link"></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="course-card card d-flex rounded-0 bg-white border-0 overflow-hidden h-100 d-flex waves-effect">
-                                    <div class="card-header p-0 border-0 overflow-hidden rounded-0">
-                                        <div class="ratio ratio-16x9">
-                                            <img src="./assets/images/course/course-2.webp"
-                                                 class="img-fluid transition-default" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="card-body vstack">
-                                        <div class="card-category">
-                                            Công nghệ thông tin
-                                        </div>
-                                        <div class="card-title limit transition-default">
-                                            Lập trình C# trong 5 tuần - nâng cao
-                                        </div>
-                                        <div class="mt-auto">
-                                            <div class="card-user mt-1">
-                                                Kim Mạnh Tuấn
-                                            </div>
-                                            <div class="card-price mt-1">
-                                                <div class="card-price_current">
-                                                    399,000 VNĐ
-                                                </div>
-                                                <div class="card-price_old">
-                                                    799,000 VNĐ
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <a href="" class="stretched-link"></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="course-card card d-flex rounded-0 bg-white border-0 overflow-hidden h-100 d-flex waves-effect">
-                                    <div class="card-header p-0 border-0 overflow-hidden rounded-0">
-                                        <div class="ratio ratio-16x9">
-                                            <img src="./assets/images/course/course-2.webp"
-                                                 class="img-fluid transition-default" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="card-body vstack">
-                                        <div class="card-category">
-                                            Công nghệ thông tin
-                                        </div>
-                                        <div class="card-title limit transition-default">
-                                            Lập trình C# trong 5 tuần - nâng cao
-                                        </div>
-                                        <div class="mt-auto">
-                                            <div class="card-user mt-1">
-                                                Kim Mạnh Tuấn
-                                            </div>
-                                            <div class="card-price mt-1">
-                                                <div class="card-price_current">
-                                                    399,000 VNĐ
-                                                </div>
-                                                <div class="card-price_old">
-                                                    799,000 VNĐ
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <a href="" class="stretched-link"></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+	<div class="section-page">
+		<div class="section-breadcrumb">
+			<div class="container">
+				<ol class="breadcrumb bg-transparent rounded-0 mb-0 p-0">
+					<li class="breadcrumb-item">
+						<a href="#">Trang chủ</a>
+					</li>
+					<li class="breadcrumb-item">
+						Danh sách khóa học
+					</li>
+				</ol>
+			</div>
+		</div>
+		<div class="section-gap">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3">
+						<div id="categorySidebar" class="category-sidebar">
+							<div class="category-sidebar_search">
+								<form action="">
+									<input type="text" class="form-control" placeholder="Tìm trong danh mục này">
+									<button class="link-default header-search_btn">
+										<i class="far fa-search"></i>
+									</button>
+								</form>
+							</div>
+							<div class="category-sidebar_list">
+								<div class="category-sidebar_title">
+									Danh mục con
+								</div>
+								<ul>
+									<li>
+										<a href="">
+											Ôn luyện ĐGTD, ĐGNL
+											<img src="./assets/images/icon-hot.png" class="img-fluid" alt="">
+										</a>
+									</li>
+									<li>
+										<a href="">
+											Lớp 12 - 2K6
+											<img src="./assets/images/icon-new.gif" class="img-fluid" alt="">
+										</a>
+									</li>
+									<li>
+										<a href="">
+											Lớp 12 - 2K6 - LIVE PRO
+											<img src="./assets/images/icon-plus.png" class="img-fluid" alt="">
+										</a>
+									</li>
+									<li>
+										<a href="">
+											Lớp 11 - 2K7
+										</a>
+									</li>
+									<li>
+										<a href="">
+											Ôn luyện ĐGTD, ĐGNL
+											<img src="./assets/images/icon-hot.png" class="img-fluid" alt="">
+										</a>
+									</li>
+									<li>
+										<a href="">
+											Lớp 12 - 2K6
+											<img src="./assets/images/icon-new.gif" class="img-fluid" alt="">
+										</a>
+									</li>
+									<li>
+										<a href="">
+											Lớp 12 - 2K6 - LIVE PRO
+											<img src="./assets/images/icon-plus.png" class="img-fluid" alt="">
+										</a>
+									</li>
+									<li>
+										<a href="">
+											Lớp 11 - 2K7
+										</a>
+									</li>
+									<li>
+										<a href="">
+											Ôn luyện ĐGTD, ĐGNL
+											<img src="./assets/images/icon-hot.png" class="img-fluid" alt="">
+										</a>
+									</li>
+									<li>
+										<a href="">
+											Lớp 12 - 2K6
+											<img src="./assets/images/icon-new.gif" class="img-fluid" alt="">
+										</a>
+									</li>
+									<li>
+										<a href="">
+											Lớp 12 - 2K6 - LIVE PRO
+											<img src="./assets/images/icon-plus.png" class="img-fluid" alt="">
+										</a>
+									</li>
+									<li>
+										<a href="">
+											Lớp 11 - 2K7
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="category-sidebar_list">
+								<div class="category-sidebar_title">
+									Giảng viên
+								</div>
+								<div class="category-sidebar_radios" id="sidebarTeacher">
+									<div class="category-sidebar_ratio">
+										<label for="topica-navative" class="category-sidebar_ratio__item">
+											<input type="checkbox" name="category-sort" id="topica-navative" value="1">
+											<span>Topica Native</span>
+										</label>
+									</div>
+									<div class="category-sidebar_ratio">
+										<label for="dang-thanh-kiet" class="category-sidebar_ratio__item">
+											<input type="checkbox" name="category-sort" id="dang-thanh-kiet" value="2">
+											<span>Đặng Thanh Kiệt</span>
+										</label>
+									</div>
+									<div class="category-sidebar_ratio">
+										<label for="bui-duc-tien" class="category-sidebar_ratio__item">
+											<input type="checkbox" name="category-sort" id="bui-duc-tien" value="3">
+											<span>Bùi Đức Tiến</span>
+										</label>
+									</div>
+									<div class="category-sidebar_ratio">
+										<label for="mr-barry" class="category-sidebar_ratio__item">
+											<input type="checkbox" name="category-sort" id="mr-barry" value="4">
+											<span>Mr. Barry</span>
+										</label>
+									</div>
+									<div class="category-sidebar_ratio">
+										<label for="adam-yan" class="category-sidebar_ratio__item">
+											<input type="checkbox" name="category-sort" id="adam-yan" value="5">
+											<span>Adam Yan</span>
+										</label>
+									</div>
+									<div class="category-sidebar_ratio">
+										<label for="bianca-rayner" class="category-sidebar_ratio__item">
+											<input type="checkbox" name="category-sort" id="bianca-rayner" value="6">
+											<span>Bianca Rayner</span>
+										</label>
+									</div>
+									<div class="category-sidebar_ratio">
+										<label for="bui-thi-kim-dung" class="category-sidebar_ratio__item">
+											<input type="checkbox" name="category-sort" id="bui-thi-kim-dung" value="7">
+											<span>Bùi Thị Kim Dung</span>
+										</label>
+									</div>
+									<div class="category-sidebar_ratio">
+										<label for="chau-vinh-luan" class="category-sidebar_ratio__item">
+											<input type="checkbox" name="category-sort" id="chau-vinh-luan" value="8">
+											<span>Châu Vĩnh Luân</span>
+										</label>
+									</div>
+									<div class="category-sidebar_ratio">
+										<label for="pham-hong-long" class="category-sidebar_ratio__item">
+											<input type="checkbox" name="category-sort" id="pham-hong-long" value="9">
+											<span>Phạm Hồng Long</span>
+										</label>
+									</div>
+									<div class="category-sidebar_ratio">
+										<label for="pham-nguyen-tuan" class="category-sidebar_ratio__item">
+											<input type="checkbox" name="category-sort" id="pham-nguyen-tuan"
+											       value="10">
+											<span>Phạm Nguyên Tuấn</span>
+										</label>
+									</div>
+								</div>
+								<div class="text-center mt-3">
+									<!-- Mỗi lần click thì append thêm 5 giảng viên -->
+									<button type="button" class="button-theme button-theme_primary" id="appendTeacher">
+										Xem thêm
+									</button>
+								</div>
+							</div>
+						</div>
+						<div id="categoryOverlay" class="category-overlay"></div>
+					</div>
+					<div class="col-lg-9">
+						<div class="category-filter d-block d-lg-none">
+							<button type="button" id="callSidebar" class="link-default">
+								<i class="far fa-filter"></i>
+								Bộ lọc
+							</button>
+						</div>
+						<div class="category-sort">
+							<button type="button" class="category-sort_item waves-effect waves-light active">
+								Liên quan nhất
+							</button>
+							<button type="button" class="category-sort_item waves-effect">
+								Phố biến nhất
+							</button>
+							<button type="button" class="category-sort_item waves-effect">
+								Giá rẻ nhất
+							</button>
+							<button type="button" class="category-sort_item waves-effect">
+								Mới nhất
+							</button>
+						</div>
+						<div class="row g-3 row-cols-1 row-cols-sm-2 row-cols-xl-3">
+							<div class="col">
+								<div class="course-card card d-flex rounded-0 bg-white border-0 overflow-hidden h-100 d-flex waves-effect">
+									<div class="card-header p-0 border-0 overflow-hidden rounded-0">
+										<div class="ratio ratio-16x9">
+											<img src="./assets/images/course/course-2.webp"
+											     class="img-fluid transition-default" alt="">
+										</div>
+									</div>
+									<div class="card-body vstack">
+										<div class="card-category">
+											Công nghệ thông tin
+										</div>
+										<div class="card-title limit transition-default">
+											Lập trình C# trong 5 tuần - nâng cao
+										</div>
+										<div class="mt-auto">
+											<div class="card-user mt-1">
+												Kim Mạnh Tuấn
+											</div>
+											<div class="card-price mt-1">
+												<div class="card-price_current">
+													399,000 VNĐ
+												</div>
+												<div class="card-price_old">
+													799,000 VNĐ
+												</div>
+											</div>
+										</div>
+										<a href="" class="stretched-link"></a>
+									</div>
+								</div>
+							</div>
+							<div class="col">
+								<div class="course-card card d-flex rounded-0 bg-white border-0 overflow-hidden h-100 d-flex waves-effect">
+									<div class="card-header p-0 border-0 overflow-hidden rounded-0">
+										<div class="ratio ratio-16x9">
+											<img src="./assets/images/course/course-2.webp"
+											     class="img-fluid transition-default" alt="">
+										</div>
+									</div>
+									<div class="card-body vstack">
+										<div class="card-category">
+											Công nghệ thông tin
+										</div>
+										<div class="card-title limit transition-default">
+											Lập trình C# trong 5 tuần - nâng cao
+										</div>
+										<div class="mt-auto">
+											<div class="card-user mt-1">
+												Kim Mạnh Tuấn
+											</div>
+											<div class="card-price mt-1">
+												<div class="card-price_current">
+													399,000 VNĐ
+												</div>
+												<div class="card-price_old">
+													799,000 VNĐ
+												</div>
+											</div>
+										</div>
+										<a href="" class="stretched-link"></a>
+									</div>
+								</div>
+							</div>
+							<div class="col">
+								<div class="course-card card d-flex rounded-0 bg-white border-0 overflow-hidden h-100 d-flex waves-effect">
+									<div class="card-header p-0 border-0 overflow-hidden rounded-0">
+										<div class="ratio ratio-16x9">
+											<img src="./assets/images/course/course-2.webp"
+											     class="img-fluid transition-default" alt="">
+										</div>
+									</div>
+									<div class="card-body vstack">
+										<div class="card-category">
+											Công nghệ thông tin
+										</div>
+										<div class="card-title limit transition-default">
+											Lập trình C# trong 5 tuần - nâng cao
+										</div>
+										<div class="mt-auto">
+											<div class="card-user mt-1">
+												Kim Mạnh Tuấn
+											</div>
+											<div class="card-price mt-1">
+												<div class="card-price_current">
+													399,000 VNĐ
+												</div>
+												<div class="card-price_old">
+													799,000 VNĐ
+												</div>
+											</div>
+										</div>
+										<a href="" class="stretched-link"></a>
+									</div>
+								</div>
+							</div>
+							<div class="col">
+								<div class="course-card card d-flex rounded-0 bg-white border-0 overflow-hidden h-100 d-flex waves-effect">
+									<div class="card-header p-0 border-0 overflow-hidden rounded-0">
+										<div class="ratio ratio-16x9">
+											<img src="./assets/images/course/course-2.webp"
+											     class="img-fluid transition-default" alt="">
+										</div>
+									</div>
+									<div class="card-body vstack">
+										<div class="card-category">
+											Công nghệ thông tin
+										</div>
+										<div class="card-title limit transition-default">
+											Lập trình C# trong 5 tuần - nâng cao
+										</div>
+										<div class="mt-auto">
+											<div class="card-user mt-1">
+												Kim Mạnh Tuấn
+											</div>
+											<div class="card-price mt-1">
+												<div class="card-price_current">
+													399,000 VNĐ
+												</div>
+												<div class="card-price_old">
+													799,000 VNĐ
+												</div>
+											</div>
+										</div>
+										<a href="" class="stretched-link"></a>
+									</div>
+								</div>
+							</div>
+							<div class="col">
+								<div class="course-card card d-flex rounded-0 bg-white border-0 overflow-hidden h-100 d-flex waves-effect">
+									<div class="card-header p-0 border-0 overflow-hidden rounded-0">
+										<div class="ratio ratio-16x9">
+											<img src="./assets/images/course/course-2.webp"
+											     class="img-fluid transition-default" alt="">
+										</div>
+									</div>
+									<div class="card-body vstack">
+										<div class="card-category">
+											Công nghệ thông tin
+										</div>
+										<div class="card-title limit transition-default">
+											Lập trình C# trong 5 tuần - nâng cao
+										</div>
+										<div class="mt-auto">
+											<div class="card-user mt-1">
+												Kim Mạnh Tuấn
+											</div>
+											<div class="card-price mt-1">
+												<div class="card-price_current">
+													399,000 VNĐ
+												</div>
+												<div class="card-price_old">
+													799,000 VNĐ
+												</div>
+											</div>
+										</div>
+										<a href="" class="stretched-link"></a>
+									</div>
+								</div>
+							</div>
+							<div class="col">
+								<div class="course-card card d-flex rounded-0 bg-white border-0 overflow-hidden h-100 d-flex waves-effect">
+									<div class="card-header p-0 border-0 overflow-hidden rounded-0">
+										<div class="ratio ratio-16x9">
+											<img src="./assets/images/course/course-2.webp"
+											     class="img-fluid transition-default" alt="">
+										</div>
+									</div>
+									<div class="card-body vstack">
+										<div class="card-category">
+											Công nghệ thông tin
+										</div>
+										<div class="card-title limit transition-default">
+											Lập trình C# trong 5 tuần - nâng cao
+										</div>
+										<div class="mt-auto">
+											<div class="card-user mt-1">
+												Kim Mạnh Tuấn
+											</div>
+											<div class="card-price mt-1">
+												<div class="card-price_current">
+													399,000 VNĐ
+												</div>
+												<div class="card-price_old">
+													799,000 VNĐ
+												</div>
+											</div>
+										</div>
+										<a href="" class="stretched-link"></a>
+									</div>
+								</div>
+							</div>
+							<div class="col">
+								<div class="course-card card d-flex rounded-0 bg-white border-0 overflow-hidden h-100 d-flex waves-effect">
+									<div class="card-header p-0 border-0 overflow-hidden rounded-0">
+										<div class="ratio ratio-16x9">
+											<img src="./assets/images/course/course-2.webp"
+											     class="img-fluid transition-default" alt="">
+										</div>
+									</div>
+									<div class="card-body vstack">
+										<div class="card-category">
+											Công nghệ thông tin
+										</div>
+										<div class="card-title limit transition-default">
+											Lập trình C# trong 5 tuần - nâng cao
+										</div>
+										<div class="mt-auto">
+											<div class="card-user mt-1">
+												Kim Mạnh Tuấn
+											</div>
+											<div class="card-price mt-1">
+												<div class="card-price_current">
+													399,000 VNĐ
+												</div>
+												<div class="card-price_old">
+													799,000 VNĐ
+												</div>
+											</div>
+										</div>
+										<a href="" class="stretched-link"></a>
+									</div>
+								</div>
+							</div>
+							<div class="col">
+								<div class="course-card card d-flex rounded-0 bg-white border-0 overflow-hidden h-100 d-flex waves-effect">
+									<div class="card-header p-0 border-0 overflow-hidden rounded-0">
+										<div class="ratio ratio-16x9">
+											<img src="./assets/images/course/course-2.webp"
+											     class="img-fluid transition-default" alt="">
+										</div>
+									</div>
+									<div class="card-body vstack">
+										<div class="card-category">
+											Công nghệ thông tin
+										</div>
+										<div class="card-title limit transition-default">
+											Lập trình C# trong 5 tuần - nâng cao
+										</div>
+										<div class="mt-auto">
+											<div class="card-user mt-1">
+												Kim Mạnh Tuấn
+											</div>
+											<div class="card-price mt-1">
+												<div class="card-price_current">
+													399,000 VNĐ
+												</div>
+												<div class="card-price_old">
+													799,000 VNĐ
+												</div>
+											</div>
+										</div>
+										<a href="" class="stretched-link"></a>
+									</div>
+								</div>
+							</div>
+							<div class="col">
+								<div class="course-card card d-flex rounded-0 bg-white border-0 overflow-hidden h-100 d-flex waves-effect">
+									<div class="card-header p-0 border-0 overflow-hidden rounded-0">
+										<div class="ratio ratio-16x9">
+											<img src="./assets/images/course/course-2.webp"
+											     class="img-fluid transition-default" alt="">
+										</div>
+									</div>
+									<div class="card-body vstack">
+										<div class="card-category">
+											Công nghệ thông tin
+										</div>
+										<div class="card-title limit transition-default">
+											Lập trình C# trong 5 tuần - nâng cao
+										</div>
+										<div class="mt-auto">
+											<div class="card-user mt-1">
+												Kim Mạnh Tuấn
+											</div>
+											<div class="card-price mt-1">
+												<div class="card-price_current">
+													399,000 VNĐ
+												</div>
+												<div class="card-price_old">
+													799,000 VNĐ
+												</div>
+											</div>
+										</div>
+										<a href="" class="stretched-link"></a>
+									</div>
+								</div>
+							</div>
+							<div class="col">
+								<div class="course-card card d-flex rounded-0 bg-white border-0 overflow-hidden h-100 d-flex waves-effect">
+									<div class="card-header p-0 border-0 overflow-hidden rounded-0">
+										<div class="ratio ratio-16x9">
+											<img src="./assets/images/course/course-2.webp"
+											     class="img-fluid transition-default" alt="">
+										</div>
+									</div>
+									<div class="card-body vstack">
+										<div class="card-category">
+											Công nghệ thông tin
+										</div>
+										<div class="card-title limit transition-default">
+											Lập trình C# trong 5 tuần - nâng cao
+										</div>
+										<div class="mt-auto">
+											<div class="card-user mt-1">
+												Kim Mạnh Tuấn
+											</div>
+											<div class="card-price mt-1">
+												<div class="card-price_current">
+													399,000 VNĐ
+												</div>
+												<div class="card-price_old">
+													799,000 VNĐ
+												</div>
+											</div>
+										</div>
+										<a href="" class="stretched-link"></a>
+									</div>
+								</div>
+							</div>
+							<div class="col">
+								<div class="course-card card d-flex rounded-0 bg-white border-0 overflow-hidden h-100 d-flex waves-effect">
+									<div class="card-header p-0 border-0 overflow-hidden rounded-0">
+										<div class="ratio ratio-16x9">
+											<img src="./assets/images/course/course-2.webp"
+											     class="img-fluid transition-default" alt="">
+										</div>
+									</div>
+									<div class="card-body vstack">
+										<div class="card-category">
+											Công nghệ thông tin
+										</div>
+										<div class="card-title limit transition-default">
+											Lập trình C# trong 5 tuần - nâng cao
+										</div>
+										<div class="mt-auto">
+											<div class="card-user mt-1">
+												Kim Mạnh Tuấn
+											</div>
+											<div class="card-price mt-1">
+												<div class="card-price_current">
+													399,000 VNĐ
+												</div>
+												<div class="card-price_old">
+													799,000 VNĐ
+												</div>
+											</div>
+										</div>
+										<a href="" class="stretched-link"></a>
+									</div>
+								</div>
+							</div>
+							<div class="col">
+								<div class="course-card card d-flex rounded-0 bg-white border-0 overflow-hidden h-100 d-flex waves-effect">
+									<div class="card-header p-0 border-0 overflow-hidden rounded-0">
+										<div class="ratio ratio-16x9">
+											<img src="./assets/images/course/course-2.webp"
+											     class="img-fluid transition-default" alt="">
+										</div>
+									</div>
+									<div class="card-body vstack">
+										<div class="card-category">
+											Công nghệ thông tin
+										</div>
+										<div class="card-title limit transition-default">
+											Lập trình C# trong 5 tuần - nâng cao
+										</div>
+										<div class="mt-auto">
+											<div class="card-user mt-1">
+												Kim Mạnh Tuấn
+											</div>
+											<div class="card-price mt-1">
+												<div class="card-price_current">
+													399,000 VNĐ
+												</div>
+												<div class="card-price_old">
+													799,000 VNĐ
+												</div>
+											</div>
+										</div>
+										<a href="" class="stretched-link"></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
 
 <footer id="footer" class="footer">
-    <div class="footer-top">
-        <div class="container">
-            <div class="footer-inner">
-                <div class="footer-item text-center background-cover"
-                     style="background-image: url(./assets/images/background-footer.png)">
-                    <div class="footer-logo">
-                        <a href="" class="d-inline-block align-middle">
-                            <img src="./assets/images/logo-white.png" height="120px" class="mw-100" alt="">
-                        </a>
-                    </div>
-                    <div class="footer-title">
-                        CƠ QUAN CHỦ QUẢN: CÔNG TY CỔ PHẦN CÔNG NGHỆ GIÁO DỤC THÀNH PHÁT
-                    </div>
-                </div>
-                <div class="footer-item">
-                    <div class="footer-list">
-                        <a href="" class="d-inline-block align-middle footer-list_item">
-                            <i class="fas fa-caret-right"></i>
-                            Hướng dẫn
-                        </a>
-                        <a href="" class="d-inline-block align-middle footer-list_item">
-                            <i class="fas fa-caret-right"></i>
-                            Chính sách
-                        </a>
-                        <a href="" class="d-inline-block align-middle footer-list_item">
-                            <i class="fas fa-caret-right"></i>
-                            CS mua khóa học
-                        </a>
-                        <a href="" class="d-inline-block align-middle footer-list_item">
-                            <i class="fas fa-caret-right"></i>
-                            Hướng dẫn
-                        </a>
-                        <a href="" class="d-inline-block align-middle footer-list_item">
-                            <i class="fas fa-caret-right"></i>
-                            Chính sách
-                        </a>
-                        <a href="" class="d-inline-block align-middle footer-list_item">
-                            <i class="fas fa-caret-right"></i>
-                            CS mua khóa học
-                        </a>
-                        <a href="" class="d-inline-block align-middle footer-list_item">
-                            <i class="fas fa-caret-right"></i>
-                            Hướng dẫn
-                        </a>
-                        <a href="" class="d-inline-block align-middle footer-list_item">
-                            <i class="fas fa-caret-right"></i>
-                            Chính sách
-                        </a>
-                        <a href="" class="d-inline-block align-middle footer-list_item">
-                            <i class="fas fa-caret-right"></i>
-                            Chính sách
-                        </a>
-                        <a href="" class="d-inline-block align-middle footer-list_item">
-                            <i class="fas fa-caret-right"></i>
-                            CS mua khóa học
-                        </a>
-                        <a href="" class="d-inline-block align-middle footer-list_item">
-                            <i class="fas fa-caret-right"></i>
-                            Hướng dẫn
-                        </a>
-                        <a href="" class="d-inline-block align-middle footer-list_item">
-                            <i class="fas fa-caret-right"></i>
-                            Chính sách
-                        </a>
-                    </div>
-                </div>
-                <div class="footer-item">
-                    <div class="footer-address">
-                        <div class="d-inline-block align-middle footer-address_item">
-                            <i class="fas fa-phone-alt"></i>
-                            Tel: <a href="">024.7300.7989</a>
-                            <span>&nbsp;-&nbsp;</span>
-                            Hotline: <a href="">1800.6947</a>
-                        </div>
-                        <div class="d-inline-block align-middle footer-address_item">
-                            <i class="fas fa-envelope"></i>
-                            Email: <a href="">lienhe@tuyensinh247.com</a>
-                        </div>
-                        <div class="d-inline-block align-middle footer-address_item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            Văn phòng: <a href="">Tầng 7 - Tòa nhà Intracom - Số 82 Dịch Vọng Hậu - Cầu Giấy - Hà
-                            Nội</a>
-                        </div>
-                    </div>
-                    <div class="footer-images hstack gap-15px">
-                        <a href="" class="d-inline-block align-middle">
-                            <img src="./assets/images/app-store.png" class="mw-100" height="40px" alt="">
-                        </a>
-                        <a href="" class="d-inline-block align-middle">
-                            <img src="./assets/images/google-play.png" class="mw-100" height="40px" alt="">
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="footer-bottom">
-        <div class="container">
-            <div class="row g-3 align-items-center">
-                <div class="col-lg-8">
-                    <div class="footer-text">
-                        <p>Giấy phép cung cấp dịch vụ mạng xã hội trực tuyến số 337/GP-BTTTT do Bộ Thông tin và Truyền
-                            thông cấp ngày 10/07/2017.</p>
-                        <p>Giấy phép kinh doanh giáo dục: MST-0106478082 do Sở Kế hoạch và Đầu tư cấp ngày
-                            24/10/2011.</p>
-                        <p>Chịu trách nhiệm nội dung: Phạm Đức Tuệ.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="text-lg-end">
-                        <a href="" class="d-inline-block align-middle">
-                            <img src="./assets/images/bo-cong-thuong.png" height="50px" class="mw-100" alt="">
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+	<div class="footer-top">
+		<div class="container">
+			<div class="footer-inner">
+				<div class="footer-item text-center background-cover"
+				     style="background-image: url(./assets/images/background-footer.png)">
+					<div class="footer-logo">
+						<a href="" class="d-inline-block align-middle">
+							<img src="./assets/images/logo-white.png" height="120px" class="mw-100" alt="">
+						</a>
+					</div>
+					<div class="footer-title">
+						CƠ QUAN CHỦ QUẢN: CÔNG TY CỔ PHẦN CÔNG NGHỆ GIÁO DỤC THÀNH PHÁT
+					</div>
+				</div>
+				<div class="footer-item">
+					<div class="footer-list">
+						<a href="" class="d-inline-block align-middle footer-list_item">
+							<i class="fas fa-caret-right"></i>
+							Hướng dẫn
+						</a>
+						<a href="" class="d-inline-block align-middle footer-list_item">
+							<i class="fas fa-caret-right"></i>
+							Chính sách
+						</a>
+						<a href="" class="d-inline-block align-middle footer-list_item">
+							<i class="fas fa-caret-right"></i>
+							CS mua khóa học
+						</a>
+						<a href="" class="d-inline-block align-middle footer-list_item">
+							<i class="fas fa-caret-right"></i>
+							Hướng dẫn
+						</a>
+						<a href="" class="d-inline-block align-middle footer-list_item">
+							<i class="fas fa-caret-right"></i>
+							Chính sách
+						</a>
+						<a href="" class="d-inline-block align-middle footer-list_item">
+							<i class="fas fa-caret-right"></i>
+							CS mua khóa học
+						</a>
+						<a href="" class="d-inline-block align-middle footer-list_item">
+							<i class="fas fa-caret-right"></i>
+							Hướng dẫn
+						</a>
+						<a href="" class="d-inline-block align-middle footer-list_item">
+							<i class="fas fa-caret-right"></i>
+							Chính sách
+						</a>
+						<a href="" class="d-inline-block align-middle footer-list_item">
+							<i class="fas fa-caret-right"></i>
+							Chính sách
+						</a>
+						<a href="" class="d-inline-block align-middle footer-list_item">
+							<i class="fas fa-caret-right"></i>
+							CS mua khóa học
+						</a>
+						<a href="" class="d-inline-block align-middle footer-list_item">
+							<i class="fas fa-caret-right"></i>
+							Hướng dẫn
+						</a>
+						<a href="" class="d-inline-block align-middle footer-list_item">
+							<i class="fas fa-caret-right"></i>
+							Chính sách
+						</a>
+					</div>
+				</div>
+				<div class="footer-item">
+					<div class="footer-address">
+						<div class="d-inline-block align-middle footer-address_item">
+							<i class="fas fa-phone-alt"></i>
+							Tel: <a href="">024.7300.7989</a>
+							<span>&nbsp;-&nbsp;</span>
+							Hotline: <a href="">1800.6947</a>
+						</div>
+						<div class="d-inline-block align-middle footer-address_item">
+							<i class="fas fa-envelope"></i>
+							Email: <a href="">lienhe@tuyensinh247.com</a>
+						</div>
+						<div class="d-inline-block align-middle footer-address_item">
+							<i class="fas fa-map-marker-alt"></i>
+							Văn phòng: <a href="">Tầng 7 - Tòa nhà Intracom - Số 82 Dịch Vọng Hậu - Cầu Giấy - Hà
+							                      Nội</a>
+						</div>
+					</div>
+					<div class="footer-images hstack gap-15px">
+						<a href="" class="d-inline-block align-middle">
+							<img src="./assets/images/app-store.png" class="mw-100" height="40px" alt="">
+						</a>
+						<a href="" class="d-inline-block align-middle">
+							<img src="./assets/images/google-play.png" class="mw-100" height="40px" alt="">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer-bottom">
+		<div class="container">
+			<div class="row g-3 align-items-center">
+				<div class="col-lg-8">
+					<div class="footer-text">
+						<p>Giấy phép cung cấp dịch vụ mạng xã hội trực tuyến số 337/GP-BTTTT do Bộ Thông tin và Truyền
+						   thông cấp ngày 10/07/2017.
+						</p>
+						<p>Giấy phép kinh doanh giáo dục: MST-0106478082 do Sở Kế hoạch và Đầu tư cấp ngày
+						   24/10/2011.
+						</p>
+						<p>Chịu trách nhiệm nội dung: Phạm Đức Tuệ.</p>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="text-lg-end">
+						<a href="" class="d-inline-block align-middle">
+							<img src="./assets/images/bo-cong-thuong.png" height="50px" class="mw-100" alt="">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </footer>
 
 <div class="floating-cart is-product" id="floatingCart">
-    <div class="cart-card card border-0 rounded-0 bg-white position-fixed top-0 end-0 mw-100 h-100 overflow-hidden">
-        <div class="card-header rounded-0 bg-white hstack justify-content-between">
-            <div class="card-title fw-bold mb-0">
-                GIỎ HÀNG
-            </div>
-            <button class="link-default" id="closeCart">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <line x1="18" y1="6" x2="6" y2="18"></line>
-                    <line x1="6" y1="6" x2="18" y2="18"></line>
-                </svg>
-            </button>
-        </div>
-        <div class="card-body p-0 flex-fill vstack h-100">
-            <div class="card-list position-relative flex-fill">
-                <div class="card-scroll position-absolute top-0 start-0 bottom-0 end-0 mh-100">
-                    <div id="cardList"
-                         class="card-list position-absolute top-0 start-0 bottom-0 end-0 mh-100">
-                        <div class="card-item align-items-start gap-10px hstack">
-                            <div class="card-image flex-shrink-0">
-                                <a href="" class="d-inline-flex align-middle ratio ratio-16x9">
-                                    <img src="./assets/images/course/course-1.webp"
-                                         class="w-100 img-fluid transition-default" alt="">
-                                </a>
-                            </div>
-                            <div class="card-content flex-fill">
-                                <a href="" class="card-title limit">
-                                    Lớp Tiếng Anh 11-12 chất lượng Việt Nam
-                                </a>
-                                <div class="hstack gap-8px justify-content-between">
-                                    <div class="card-quantity w-50 flex-fill">
-                                        <div class="card-text">
-                                            Số lượng
-                                        </div>
-                                        <div class="card-group hstack flex-nowrap quantityGroup">
-                                            <button disabled
-                                                    class="link-default hstack justify-content-center flex-shrink-0 card-quantity_btn quantityButton"
-                                                    data-type="0">
-                                                <i class="fal fa-minus"></i>
-                                            </button>
-                                            <input type="text" class="form-control card-quantity_input quantityInput"
-                                                   value="1">
-                                            <button class="link-default hstack justify-content-center flex-shrink-0 card-quantity_btn quantityButton"
-                                                    data-type="1">
-                                                <i class="fal fa-plus"></i>
-                                            </button>
-                                        </div>
-                                    </div>
-                                    <div class="card-desc w-50 flex-fill text-end">
-                                        <div class="card-price">
-                                            6.950.000₫
-                                        </div>
-                                        <div class="card-clear">
-                                            <button class="link-default buttonDelete">Xóa</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-item align-items-start gap-10px hstack">
-                            <div class="card-image flex-shrink-0">
-                                <a href="" class="d-inline-flex align-middle ratio ratio-16x9">
-                                    <img src="./assets/images/course/course-1.webp"
-                                         class="w-100 img-fluid transition-default" alt="">
-                                </a>
-                            </div>
-                            <div class="card-content flex-fill">
-                                <a href="" class="card-title limit">
-                                    Lớp Tiếng Anh 11-12 chất lượng Việt Nam
-                                </a>
-                                <div class="hstack gap-8px justify-content-between">
-                                    <div class="card-quantity w-50 flex-fill">
-                                        <div class="card-text">
-                                            Số lượng
-                                        </div>
-                                        <div class="card-group hstack flex-nowrap quantityGroup">
-                                            <button disabled
-                                                    class="link-default hstack justify-content-center flex-shrink-0 card-quantity_btn quantityButton"
-                                                    data-type="0">
-                                                <i class="fal fa-minus"></i>
-                                            </button>
-                                            <input type="text" class="form-control card-quantity_input quantityInput"
-                                                   value="1">
-                                            <button class="link-default hstack justify-content-center flex-shrink-0 card-quantity_btn quantityButton"
-                                                    data-type="1">
-                                                <i class="fal fa-plus"></i>
-                                            </button>
-                                        </div>
-                                    </div>
-                                    <div class="card-desc w-50 flex-fill text-end">
-                                        <div class="card-price">
-                                            6.950.000₫
-                                        </div>
-                                        <div class="card-clear">
-                                            <button class="link-default buttonDelete">Xóa</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-item align-items-start gap-10px hstack">
-                            <div class="card-image flex-shrink-0">
-                                <a href="" class="d-inline-flex align-middle ratio ratio-16x9">
-                                    <img src="./assets/images/course/course-1.webp"
-                                         class="w-100 img-fluid transition-default" alt="">
-                                </a>
-                            </div>
-                            <div class="card-content flex-fill">
-                                <a href="" class="card-title limit">
-                                    Lớp Tiếng Anh 11-12 chất lượng Việt Nam
-                                </a>
-                                <div class="hstack gap-8px justify-content-between">
-                                    <div class="card-quantity w-50 flex-fill">
-                                        <div class="card-text">
-                                            Số lượng
-                                        </div>
-                                        <div class="card-group hstack flex-nowrap quantityGroup">
-                                            <button disabled
-                                                    class="link-default hstack justify-content-center flex-shrink-0 card-quantity_btn quantityButton"
-                                                    data-type="0">
-                                                <i class="fal fa-minus"></i>
-                                            </button>
-                                            <input type="text" class="form-control card-quantity_input quantityInput"
-                                                   value="1">
-                                            <button class="link-default hstack justify-content-center flex-shrink-0 card-quantity_btn quantityButton"
-                                                    data-type="1">
-                                                <i class="fal fa-plus"></i>
-                                            </button>
-                                        </div>
-                                    </div>
-                                    <div class="card-desc w-50 flex-fill text-end">
-                                        <div class="card-price">
-                                            6.950.000₫
-                                        </div>
-                                        <div class="card-clear">
-                                            <button class="link-default buttonDelete">Xóa</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-item align-items-start gap-10px hstack">
-                            <div class="card-image flex-shrink-0">
-                                <a href="" class="d-inline-flex align-middle ratio ratio-16x9">
-                                    <img src="./assets/images/course/course-1.webp"
-                                         class="w-100 img-fluid transition-default" alt="">
-                                </a>
-                            </div>
-                            <div class="card-content flex-fill">
-                                <a href="" class="card-title limit">
-                                    Lớp Tiếng Anh 11-12 chất lượng Việt Nam
-                                </a>
-                                <div class="hstack gap-8px justify-content-between">
-                                    <div class="card-quantity w-50 flex-fill">
-                                        <div class="card-text">
-                                            Số lượng
-                                        </div>
-                                        <div class="card-group hstack flex-nowrap quantityGroup">
-                                            <button disabled
-                                                    class="link-default hstack justify-content-center flex-shrink-0 card-quantity_btn quantityButton"
-                                                    data-type="0">
-                                                <i class="fal fa-minus"></i>
-                                            </button>
-                                            <input type="text" class="form-control card-quantity_input quantityInput"
-                                                   value="1">
-                                            <button class="link-default hstack justify-content-center flex-shrink-0 card-quantity_btn quantityButton"
-                                                    data-type="1">
-                                                <i class="fal fa-plus"></i>
-                                            </button>
-                                        </div>
-                                    </div>
-                                    <div class="card-desc w-50 flex-fill text-end">
-                                        <div class="card-price">
-                                            6.950.000₫
-                                        </div>
-                                        <div class="card-clear">
-                                            <button class="link-default buttonDelete">Xóa</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-item align-items-start gap-10px hstack">
-                            <div class="card-image flex-shrink-0">
-                                <a href="" class="d-inline-flex align-middle ratio ratio-16x9">
-                                    <img src="./assets/images/course/course-1.webp"
-                                         class="w-100 img-fluid transition-default" alt="">
-                                </a>
-                            </div>
-                            <div class="card-content flex-fill">
-                                <a href="" class="card-title limit">
-                                    Lớp Tiếng Anh 11-12 chất lượng Việt Nam
-                                </a>
-                                <div class="hstack gap-8px justify-content-between">
-                                    <div class="card-quantity w-50 flex-fill">
-                                        <div class="card-text">
-                                            Số lượng
-                                        </div>
-                                        <div class="card-group hstack flex-nowrap quantityGroup">
-                                            <button disabled
-                                                    class="link-default hstack justify-content-center flex-shrink-0 card-quantity_btn quantityButton"
-                                                    data-type="0">
-                                                <i class="fal fa-minus"></i>
-                                            </button>
-                                            <input type="text" class="form-control card-quantity_input quantityInput"
-                                                   value="1">
-                                            <button class="link-default hstack justify-content-center flex-shrink-0 card-quantity_btn quantityButton"
-                                                    data-type="1">
-                                                <i class="fal fa-plus"></i>
-                                            </button>
-                                        </div>
-                                    </div>
-                                    <div class="card-desc w-50 flex-fill text-end">
-                                        <div class="card-price">
-                                            6.950.000₫
-                                        </div>
-                                        <div class="card-clear">
-                                            <button class="link-default buttonDelete">Xóa</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-item align-items-start gap-10px hstack">
-                            <div class="card-image flex-shrink-0">
-                                <a href="" class="d-inline-flex align-middle ratio ratio-16x9">
-                                    <img src="./assets/images/course/course-1.webp"
-                                         class="w-100 img-fluid transition-default" alt="">
-                                </a>
-                            </div>
-                            <div class="card-content flex-fill">
-                                <a href="" class="card-title limit">
-                                    Lớp Tiếng Anh 11-12 chất lượng Việt Nam
-                                </a>
-                                <div class="hstack gap-8px justify-content-between">
-                                    <div class="card-quantity w-50 flex-fill">
-                                        <div class="card-text">
-                                            Số lượng
-                                        </div>
-                                        <div class="card-group hstack flex-nowrap quantityGroup">
-                                            <button disabled
-                                                    class="link-default hstack justify-content-center flex-shrink-0 card-quantity_btn quantityButton"
-                                                    data-type="0">
-                                                <i class="fal fa-minus"></i>
-                                            </button>
-                                            <input type="text" class="form-control card-quantity_input quantityInput"
-                                                   value="1">
-                                            <button class="link-default hstack justify-content-center flex-shrink-0 card-quantity_btn quantityButton"
-                                                    data-type="1">
-                                                <i class="fal fa-plus"></i>
-                                            </button>
-                                        </div>
-                                    </div>
-                                    <div class="card-desc w-50 flex-fill text-end">
-                                        <div class="card-price">
-                                            6.950.000₫
-                                        </div>
-                                        <div class="card-clear">
-                                            <button class="link-default buttonDelete">Xóa</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--<div class="card-empty text-center">
-                        <div class="card-icon">
-                            <img src="./assets/images/empty-cart.avif" class="img-fluid" alt="">
-                        </div>
-                        <div class="card-title">
-                            Giỏ hàng của bạn đang trống
-                        </div>
-                    </div>-->
-                </div>
-            </div>
-            <div class="card-information">
-                <div class="card-total hstack justify-content-between">
-                    <div class="card-text">
-                        Tạm tính:
-                    </div>
-                    <div class="card-value">1.050.000đ</div>
-                </div>
-                <div class="card-button">
-                    <a href="./thanh-toan.html"
-                       class="button-theme button-theme_primary waves-effect waves-light w-100">
-                        Thanh toán <i class="fal fa-angle-right lh-base ms-2 fz-20"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="floating-overlay" id="floatingOverlay"></div>
+	<div class="cart-card card border-0 rounded-0 bg-white position-fixed top-0 end-0 mw-100 h-100 overflow-hidden">
+		<div class="card-header rounded-0 bg-white hstack justify-content-between">
+			<div class="card-title fw-bold mb-0">
+				GIỎ HÀNG
+			</div>
+			<button class="link-default" id="closeCart">
+				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+				     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+					<line x1="18" y1="6" x2="6" y2="18"></line>
+					<line x1="6" y1="6" x2="18" y2="18"></line>
+				</svg>
+			</button>
+		</div>
+		<div class="card-body p-0 flex-fill vstack h-100">
+			<div class="card-list position-relative flex-fill">
+				<div class="card-scroll position-absolute top-0 start-0 bottom-0 end-0 mh-100">
+					<div id="cardList"
+					     class="card-list position-absolute top-0 start-0 bottom-0 end-0 mh-100">
+						<div class="card-item align-items-start gap-10px hstack">
+							<div class="card-image flex-shrink-0">
+								<a href="" class="d-inline-flex align-middle ratio ratio-16x9">
+									<img src="./assets/images/course/course-1.webp"
+									     class="w-100 img-fluid transition-default" alt="">
+								</a>
+							</div>
+							<div class="card-content flex-fill">
+								<a href="" class="card-title limit">
+									Lớp Tiếng Anh 11-12 chất lượng Việt Nam
+								</a>
+								<div class="hstack gap-8px justify-content-between">
+									<div class="card-quantity w-50 flex-fill">
+										<div class="card-text">
+											Số lượng
+										</div>
+										<div class="card-group hstack flex-nowrap quantityGroup">
+											<button disabled
+											        class="link-default hstack justify-content-center flex-shrink-0 card-quantity_btn quantityButton"
+											        data-type="0">
+												<i class="fal fa-minus"></i>
+											</button>
+											<input type="text" class="form-control card-quantity_input quantityInput"
+											       value="1">
+											<button class="link-default hstack justify-content-center flex-shrink-0 card-quantity_btn quantityButton"
+											        data-type="1">
+												<i class="fal fa-plus"></i>
+											</button>
+										</div>
+									</div>
+									<div class="card-desc w-50 flex-fill text-end">
+										<div class="card-price">
+											6.950.000₫
+										</div>
+										<div class="card-clear">
+											<button class="link-default buttonDelete">Xóa</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="card-item align-items-start gap-10px hstack">
+							<div class="card-image flex-shrink-0">
+								<a href="" class="d-inline-flex align-middle ratio ratio-16x9">
+									<img src="./assets/images/course/course-1.webp"
+									     class="w-100 img-fluid transition-default" alt="">
+								</a>
+							</div>
+							<div class="card-content flex-fill">
+								<a href="" class="card-title limit">
+									Lớp Tiếng Anh 11-12 chất lượng Việt Nam
+								</a>
+								<div class="hstack gap-8px justify-content-between">
+									<div class="card-quantity w-50 flex-fill">
+										<div class="card-text">
+											Số lượng
+										</div>
+										<div class="card-group hstack flex-nowrap quantityGroup">
+											<button disabled
+											        class="link-default hstack justify-content-center flex-shrink-0 card-quantity_btn quantityButton"
+											        data-type="0">
+												<i class="fal fa-minus"></i>
+											</button>
+											<input type="text" class="form-control card-quantity_input quantityInput"
+											       value="1">
+											<button class="link-default hstack justify-content-center flex-shrink-0 card-quantity_btn quantityButton"
+											        data-type="1">
+												<i class="fal fa-plus"></i>
+											</button>
+										</div>
+									</div>
+									<div class="card-desc w-50 flex-fill text-end">
+										<div class="card-price">
+											6.950.000₫
+										</div>
+										<div class="card-clear">
+											<button class="link-default buttonDelete">Xóa</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="card-item align-items-start gap-10px hstack">
+							<div class="card-image flex-shrink-0">
+								<a href="" class="d-inline-flex align-middle ratio ratio-16x9">
+									<img src="./assets/images/course/course-1.webp"
+									     class="w-100 img-fluid transition-default" alt="">
+								</a>
+							</div>
+							<div class="card-content flex-fill">
+								<a href="" class="card-title limit">
+									Lớp Tiếng Anh 11-12 chất lượng Việt Nam
+								</a>
+								<div class="hstack gap-8px justify-content-between">
+									<div class="card-quantity w-50 flex-fill">
+										<div class="card-text">
+											Số lượng
+										</div>
+										<div class="card-group hstack flex-nowrap quantityGroup">
+											<button disabled
+											        class="link-default hstack justify-content-center flex-shrink-0 card-quantity_btn quantityButton"
+											        data-type="0">
+												<i class="fal fa-minus"></i>
+											</button>
+											<input type="text" class="form-control card-quantity_input quantityInput"
+											       value="1">
+											<button class="link-default hstack justify-content-center flex-shrink-0 card-quantity_btn quantityButton"
+											        data-type="1">
+												<i class="fal fa-plus"></i>
+											</button>
+										</div>
+									</div>
+									<div class="card-desc w-50 flex-fill text-end">
+										<div class="card-price">
+											6.950.000₫
+										</div>
+										<div class="card-clear">
+											<button class="link-default buttonDelete">Xóa</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="card-item align-items-start gap-10px hstack">
+							<div class="card-image flex-shrink-0">
+								<a href="" class="d-inline-flex align-middle ratio ratio-16x9">
+									<img src="./assets/images/course/course-1.webp"
+									     class="w-100 img-fluid transition-default" alt="">
+								</a>
+							</div>
+							<div class="card-content flex-fill">
+								<a href="" class="card-title limit">
+									Lớp Tiếng Anh 11-12 chất lượng Việt Nam
+								</a>
+								<div class="hstack gap-8px justify-content-between">
+									<div class="card-quantity w-50 flex-fill">
+										<div class="card-text">
+											Số lượng
+										</div>
+										<div class="card-group hstack flex-nowrap quantityGroup">
+											<button disabled
+											        class="link-default hstack justify-content-center flex-shrink-0 card-quantity_btn quantityButton"
+											        data-type="0">
+												<i class="fal fa-minus"></i>
+											</button>
+											<input type="text" class="form-control card-quantity_input quantityInput"
+											       value="1">
+											<button class="link-default hstack justify-content-center flex-shrink-0 card-quantity_btn quantityButton"
+											        data-type="1">
+												<i class="fal fa-plus"></i>
+											</button>
+										</div>
+									</div>
+									<div class="card-desc w-50 flex-fill text-end">
+										<div class="card-price">
+											6.950.000₫
+										</div>
+										<div class="card-clear">
+											<button class="link-default buttonDelete">Xóa</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="card-item align-items-start gap-10px hstack">
+							<div class="card-image flex-shrink-0">
+								<a href="" class="d-inline-flex align-middle ratio ratio-16x9">
+									<img src="./assets/images/course/course-1.webp"
+									     class="w-100 img-fluid transition-default" alt="">
+								</a>
+							</div>
+							<div class="card-content flex-fill">
+								<a href="" class="card-title limit">
+									Lớp Tiếng Anh 11-12 chất lượng Việt Nam
+								</a>
+								<div class="hstack gap-8px justify-content-between">
+									<div class="card-quantity w-50 flex-fill">
+										<div class="card-text">
+											Số lượng
+										</div>
+										<div class="card-group hstack flex-nowrap quantityGroup">
+											<button disabled
+											        class="link-default hstack justify-content-center flex-shrink-0 card-quantity_btn quantityButton"
+											        data-type="0">
+												<i class="fal fa-minus"></i>
+											</button>
+											<input type="text" class="form-control card-quantity_input quantityInput"
+											       value="1">
+											<button class="link-default hstack justify-content-center flex-shrink-0 card-quantity_btn quantityButton"
+											        data-type="1">
+												<i class="fal fa-plus"></i>
+											</button>
+										</div>
+									</div>
+									<div class="card-desc w-50 flex-fill text-end">
+										<div class="card-price">
+											6.950.000₫
+										</div>
+										<div class="card-clear">
+											<button class="link-default buttonDelete">Xóa</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="card-item align-items-start gap-10px hstack">
+							<div class="card-image flex-shrink-0">
+								<a href="" class="d-inline-flex align-middle ratio ratio-16x9">
+									<img src="./assets/images/course/course-1.webp"
+									     class="w-100 img-fluid transition-default" alt="">
+								</a>
+							</div>
+							<div class="card-content flex-fill">
+								<a href="" class="card-title limit">
+									Lớp Tiếng Anh 11-12 chất lượng Việt Nam
+								</a>
+								<div class="hstack gap-8px justify-content-between">
+									<div class="card-quantity w-50 flex-fill">
+										<div class="card-text">
+											Số lượng
+										</div>
+										<div class="card-group hstack flex-nowrap quantityGroup">
+											<button disabled
+											        class="link-default hstack justify-content-center flex-shrink-0 card-quantity_btn quantityButton"
+											        data-type="0">
+												<i class="fal fa-minus"></i>
+											</button>
+											<input type="text" class="form-control card-quantity_input quantityInput"
+											       value="1">
+											<button class="link-default hstack justify-content-center flex-shrink-0 card-quantity_btn quantityButton"
+											        data-type="1">
+												<i class="fal fa-plus"></i>
+											</button>
+										</div>
+									</div>
+									<div class="card-desc w-50 flex-fill text-end">
+										<div class="card-price">
+											6.950.000₫
+										</div>
+										<div class="card-clear">
+											<button class="link-default buttonDelete">Xóa</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--<div class="card-empty text-center">
+						<div class="card-icon">
+							<img src="./assets/images/empty-cart.avif" class="img-fluid" alt="">
+						</div>
+						<div class="card-title">
+							Giỏ hàng của bạn đang trống
+						</div>
+					</div>-->
+				</div>
+			</div>
+			<div class="card-information">
+				<div class="card-total hstack justify-content-between">
+					<div class="card-text">
+						Tạm tính:
+					</div>
+					<div class="card-value">1.050.000đ</div>
+				</div>
+				<div class="card-button">
+					<a href="./thanh-toan.html"
+					   class="button-theme button-theme_primary waves-effect waves-light w-100">
+						Thanh toán <i class="fal fa-angle-right lh-base ms-2 fz-20"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="floating-overlay" id="floatingOverlay"></div>
 </div>
 
 <script type="text/javascript" src="./assets/plugins/jquery.min.js"></script>

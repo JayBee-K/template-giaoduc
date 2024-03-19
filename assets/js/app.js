@@ -468,6 +468,24 @@ const handleCallPopupStudy = function () {
 	}
 }
 
+const handleAppendTeacherSidebar = function () {
+	if ($('#appendTeacher').length && $('#sidebarTeacher').length) {
+		$('#appendTeacher').click(function () {
+			let htmlTeacher = '';
+			for (let i = 1; i <= 5; i++) {
+				htmlTeacher += `<div class="category-sidebar_ratio">
+                                        <label for="topica-navative" class="category-sidebar_ratio__item">
+                                            <input type="checkbox" name="category-sort" id="topica-navative" value="1">
+                                            <span>Topica Native ${i}</span>
+                                        </label>
+                                    </div>`;
+			}
+
+			$('#sidebarTeacher').append(htmlTeacher);
+		})
+	}
+}
+
 $(function () {
 	handleApplyCollapse($('#header-navigation > ul'), true, true);
 	handleCallMenu();
@@ -487,6 +505,7 @@ $(function () {
 	handleChangeQr();
 	handleCollapseSummary();
 	handleCallPopupStudy();
+	handleAppendTeacherSidebar();
 
 	if ($('.waves-effect').length) {
 		Waves.init();
