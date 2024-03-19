@@ -232,7 +232,7 @@ const handleCart = function () {
                             </div>
                             <div class="card-content flex-fill">
                                 <a href="" class="card-title limit">
-                                    Đầu báo khói quang CM WT-32L Chungmei giá rẻ nhất thị trường Việt Nam
+                                    Lớp Tiếng Anh 11-12 chất lượng Việt Nam
                                 </a>
                                 <div class="hstack gap-8px justify-content-between">
                                     <div class="card-quantity w-50 flex-fill">
