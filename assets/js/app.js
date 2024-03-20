@@ -738,6 +738,30 @@ $(function () {
 		})
 	}
 
+	if ($('#slider-feedback').length) {
+		new Swiper('#slider-feedback .swiper', {
+			speed: 1000,
+			spaceBetween: 15,
+			breakpoints: {
+				1359: {
+					slidesPerView: 5,
+				},
+				768: {
+					slidesPerView: 2.3,
+				},
+				320: {
+					slidesPerView: 1.3,
+				}
+			},
+			pagination: {
+				el: '#slider-feedback .slider-pagination',
+				type: 'bullets',
+				bulletClass: 'slider-pagination_item',
+				clickable: true,
+			}
+		});
+	}
+
 	if ($('.slider-teacher').length) {
 		$('.slider-teacher').each(function () {
 			let elmID = $(this).attr('id');
