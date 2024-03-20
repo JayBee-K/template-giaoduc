@@ -675,8 +675,8 @@ $(function () {
 							fill: "row",
 						},
 					},
-					768: {
-						slidesPerView: 2.3,
+					575: {
+						slidesPerView: 2.1,
 						spaceBetween: 10,
 						grid: {
 							rows: 2,
@@ -721,8 +721,11 @@ $(function () {
 					1359: {
 						slidesPerView: 4,
 					},
-					768: {
-						slidesPerView: 2.3,
+					575: {
+						slidesPerView: 2.1,
+					},
+					991: {
+						slidesPerView: 3.3,
 					},
 					320: {
 						slidesPerView: 1.3,
@@ -746,8 +749,14 @@ $(function () {
 				1359: {
 					slidesPerView: 5,
 				},
+				991: {
+					slidesPerView: 4.1,
+				},
 				768: {
-					slidesPerView: 2.3,
+					slidesPerView: 3.1,
+				},
+				575: {
+					slidesPerView: 2.1,
 				},
 				320: {
 					slidesPerView: 1.3,
